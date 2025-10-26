@@ -66,7 +66,7 @@ export default function PlansPage() {
         {plans.map((plan) => {
           const image = getImage(plan.id);
           return (
-            <Card key={plan.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow grid md:grid-cols-2 items-center">
+            <Card id={plan.id} key={plan.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow grid md:grid-cols-2 items-center scroll-mt-20">
               <div className="p-8 order-2 md:order-1">
                 <CardHeader className="p-0 mb-4">
                   <CardTitle className="text-3xl font-headline">{plan.title}</CardTitle>
