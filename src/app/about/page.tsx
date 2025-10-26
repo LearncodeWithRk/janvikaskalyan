@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Landmark, Calendar, FileText, ArrowRight, Group, TrendingUp, Target, Heart, Check, Zap, Handshake, Users, Shield, Clock, Phone } from 'lucide-react';
+import { FileText, Users, TrendingUp, Clock, Shield, Handshake } from 'lucide-react';
 import { getImage } from '@/lib/placeholder-images';
 
 export default function AboutPage() {
