@@ -3,91 +3,91 @@
     {
       "id": "cooperative-meeting",
       "description": "A diverse group of people in a professional meeting, looking at a presentation.",
-      "imageUrl": "https://storage.googleapis.com/project-spark-349015.appspot.com/669f91a52f44c6883ba52971/669f921f2f44c6883ba5297e.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtZWV0aW5nfGVufDB8fHx8MTc2MjE4ODcyOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cooperative meeting"
     },
     {
       "id": "team-photo",
       "description": "A friendly and professional team standing together, smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDB8fHx8MTc2MTQ1MzYzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDB8fHx8MTc2MTQ1MzYzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional team"
     },
     {
       "id": "gallery1",
       "description": "Members participating in a community event.",
-      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjE0NDU4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjE0NDU4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "community event"
     },
     {
       "id": "gallery2",
       "description": "A modern and welcoming interior of a society branch.",
-      "imageUrl": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE0MTAzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE0MTAzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "office interior"
     },
     {
       "id": "gallery3",
       "description": "A happy member receiving financial advice from a staff member.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d044b401254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzNDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzYxNDEwNzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzYxNDEwNzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial advice"
     },
     {
       "id": "gallery4",
       "description": "A group of members celebrating a society milestone.",
-      "imageUrl": "https://images.unsplash.com/photo-1627552193913-2d14caf33118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm91cCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520880350238-0498a4a75345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncm91cCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "group celebration"
     },
     {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
-      "imageUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639755248628-6e54a8063a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure savings"
     },
     {
       "id": "recurring-deposit",
       "description": "A stack of coins growing, with a plant sprouting from the top, symbolizing steady growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a706299a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93aW5nJTIwY29pbnN8ZW58MHx8fHwxNzYxNDY3OTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncm93aW5nJTIwY29pbnN8ZW58MHx8fHwxNzYxNDY3OTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growing coins"
     },
     {
       "id": "saving-deposit",
       "description": "A clear jar half-full of coins with a label that says 'SAVINGS'.",
-      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWdneSUyMGJhbmt8ZW58MHx8fHwxNzYxNDIyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYxNDIyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "savings jar"
     },
     {
       "id": "compulsory-deposit",
       "description": "A formal document with a seal, representing a mandatory and official plan.",
-      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JtYWwlMjBkb2N1bWVudHxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562564055-71e051d33c19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb3JtYWwlMjBkb2N1bWVudHxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
       "id": "personal-loan",
       "description": "A happy couple standing in front of their new home.",
-      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NjE0NDIxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NjE0NDIxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy couple"
     },
     {
       "id": "emergency-loan",
       "description": "A lifebuoy ring, symbolizing safety and rescue in times of need.",
-      "imageUrl": "https://images.unsplash.com/photo-1627993099208-a2494a8c952b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWxwaW5nJTIwaGFuZHxlbnwwfHx8fDE3NjE0MTIyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1521791055326-d6b818c8965a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoZWxwaW5nJTIwaGFuZHxlbnwwfHx8fDE3NjE0MTIyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "life buoy"
     },
     {
       "id": "loan-against-deposit",
       "description": "A key on top of a stack of money, symbolizing unlocking value from savings.",
-      "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb25leSUyMGtleXxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb25leSUyMGtleXxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "unlocking value"
     },
     {
       "id": "registration-certificate",
       "description": "Official registration certificate of the society.",
-      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTM5OTg4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "certificate document"
     },
     {
       "id": "digital-banking",
       "description": "A person using a smartphone and laptop for online banking, with digital icons in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1600427145926-5837a03b53f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwYmFua2luZ3xlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556740772-1a28a1a7f05b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwYmFua2luZ3xlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "digital banking"
     }
   ]
