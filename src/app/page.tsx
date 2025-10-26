@@ -16,35 +16,53 @@ export default function Home() {
   
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
 
+  const heroSlides = [
+    {
+      title: "Your Partner in Financial Success",
+      description: "Join a community of over 30,000 members building a secure financial future together.",
+      image: getImage('cooperative-meeting'),
+    },
+    {
+      title: "Savings & Loans, Simplified",
+      description: "Discover our member-friendly deposit schemes and get access to quick, hassle-free loans.",
+      image: getImage('gallery3'),
+    },
+    {
+      title: "A Community Built on Trust",
+      description: "Since 2015, we have been committed to transparency, integrity, and the financial well-being of our members.",
+      image: getImage('gallery4'),
+    }
+  ];
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full h-[80vh] bg-primary/10">
+      <section className="relative w-full h-[85vh] bg-primary/10">
         <Carousel
           opts={{ loop: true }}
           className="w-full h-full"
         >
           <CarouselContent>
-            {heroImages.map((heroImage, index) => (
+            {heroSlides.map((slide, index) => (
               <CarouselItem key={index}>
-                <div className="relative w-full h-[80vh]">
-                  {heroImage && (
+                <div className="relative w-full h-[85vh]">
+                  {slide.image && (
                     <Image
-                      src={heroImage.imageUrl}
-                      alt={heroImage.description}
-                      data-ai-hint={heroImage.imageHint}
+                      src={slide.image.imageUrl}
+                      alt={slide.image.description}
+                      data-ai-hint={slide.image.imageHint}
                       fill
                       className="object-cover"
                       priority={index === 0}
                     />
                   )}
-                  <div className="absolute inset-0 bg-black/40" />
-                  <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
-                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-                      {index === 0 ? "Your Personal Bank" : index === 1 ? "Financial Growth, Together" : "A Community of Trust"}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
+                  <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-end text-center text-white pb-20 md:pb-24">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 drop-shadow-lg">
+                      {slide.title}
                     </h1>
-                    <p className="text-lg md:text-xl max-w-3xl mb-8">
-                      Empowering over 30,000+ members with savings, deposits, and easy loans.
+                    <p className="text-lg md:text-xl max-w-3xl mb-8 drop-shadow-md">
+                      {slide.description}
                     </p>
                     <Link href="/join">
                       <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
