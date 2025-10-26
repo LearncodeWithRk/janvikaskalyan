@@ -184,11 +184,6 @@ export default function Home() {
               </CardFooter>
             </Card>
           </div>
-           <div className="text-center mt-12">
-            <Link href="/plans">
-              <Button size="lg">Explore All Plans <ArrowRight className="ml-2 h-5 w-5" /></Button>
-            </Link>
-          </div>
         </div>
       </section>
 
