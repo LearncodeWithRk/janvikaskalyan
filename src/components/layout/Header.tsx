@@ -32,7 +32,15 @@ const navLinks = [
       { href: "/plans#compulsory-deposit", label: "Compulsory Deposit" },
     ]
   },
-  { href: "/loans", label: "Loans" },
+  { 
+    href: "/loans", 
+    label: "Loans",
+    submenu: [
+      { href: "/loans#personal-loan", label: "Personal/Regular Loan" },
+      { href: "/loans#emergency-loan", label: "Emergency Loan" },
+      { href: "/loans#loan-against-deposit", label: "Loan Against Deposit" },
+    ]
+  },
   { href: "/join", label: "Join Us" },
   { href: "/contact", label: "Contact Us" },
 ];

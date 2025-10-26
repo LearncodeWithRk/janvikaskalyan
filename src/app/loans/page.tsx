@@ -55,7 +55,7 @@ export default function LoansPage() {
         {loanTypes.map((loan) => {
           const image = getImage(loan.id);
           return (
-            <Card key={loan.id} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow">
+            <Card id={loan.id} key={loan.id} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow scroll-mt-20">
                {image && (
                    <Image
                     src={image.imageUrl}
