@@ -170,10 +170,10 @@ function HeroSlider() {
 
 export default function HomePage() {
   const products = [
-    { title: "Recurring Deposit", description: "Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …", icon: Users, href: "/plans#recurring-deposit" },
-    { title: "Fixed Deposit", description: "Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…", icon: PiggyBank, href: "/fixed-deposit" },
-    { title: "Saving Account", description: "It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…", icon: Home, href: "/plans#saving-deposit" },
-    { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
+    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/plans#recurring-deposit" },
+    { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/fixed-deposit" },
+    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: Home, href: "/plans#saving-deposit" },
+    { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },
   ];
 
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
@@ -224,24 +224,27 @@ export default function HomePage() {
           <div className="text-left mb-12">
              <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Plans</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product) => (
-              <Card key={product.title} className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
-                    <product.icon className="h-10 w-10 text-primary" />
-                  </div>
-                  <CardTitle className="font-headline mt-4">{product.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{product.description}</p>
-                </CardContent>
-                <CardFooter className="pt-0">
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href={product.href}>Read More</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
+              <Link key={product.title} href={product.href} className="group">
+                <Card className="flex flex-col h-full p-6 text-left shadow-md hover:shadow-xl transition-all duration-300 border-transparent hover:border-primary/50 bg-card">
+                  <CardHeader className="p-0 mb-4">
+                    <div className="mb-4 bg-primary/10 text-primary p-3 rounded-lg w-fit">
+                      <product.icon className="h-8 w-8" />
+                    </div>
+                    <CardTitle className="font-headline text-xl">{product.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 flex-grow">
+                    <p className="text-muted-foreground text-sm">{product.description}</p>
+                  </CardContent>
+                  <CardFooter className="p-0 mt-6">
+                    <div className="flex items-center text-sm font-semibold text-primary">
+                      Read More
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </CardFooter>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -290,5 +293,7 @@ export default function HomePage() {
     </div>
   );
 }
+
+    
 
     
