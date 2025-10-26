@@ -41,7 +41,7 @@ const navLinks = [
       { href: "/loans#loan-against-deposit", label: "Loan Against Deposit" },
     ]
   },
-  { href: "/join", label: "Join Us" },
+  { href: "/join", label: "Membership" },
   { href: "/contact", label: "Contact Us" },
 ];
 
