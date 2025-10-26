@@ -18,41 +18,6 @@ export default function AboutPage() {
             </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center my-16">
-          <div>
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                data-ai-hint={aboutImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover"
-              />
-            )}
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold font-headline mb-4">Our History & Commitment</h2>
-            <p className="text-muted-foreground mb-4">
-              Jan Vikas Kalyan Co-operative Thrift &amp; Credit Society Ltd. was founded with a singular mission: to foster a culture of saving and financial self-reliance among our members. We began our journey on March 13, 2015, after being officially registered under the Delhi Co-operative Societies (DCS) Act of 2003.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              With over 30,000 happy members, our operations are supervised by the Registrar of Co-operative Societies, Government of N.C.T. of Delhi. The society operates on co-operative principles and is managed by a team of experienced professionals dedicated to serving our members' interests with transparency and integrity.
-            </p>
-             <Card className="bg-secondary/50 border-primary/20">
-                <CardContent className="pt-6">
-                    <div className="flex items-start gap-4">
-                        <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                        <div>
-                            <p className="font-semibold">Registration No: <span className="font-normal">10358/3TC/2015</span></p>
-                            <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
-                        </div>
-                    </div>
-                </CardContent>
-             </Card>
-          </div>
-        </div>
-
         <div className="my-16 md:my-24 text-center">
             <h2 className="text-3xl font-bold font-headline mb-12">Our Core Features</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -90,6 +55,41 @@ export default function AboutPage() {
                     </CardContent>
                 </Card>
             </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center my-16">
+          <div>
+            {aboutImage && (
+              <Image
+                src={aboutImage.imageUrl}
+                alt={aboutImage.description}
+                data-ai-hint={aboutImage.imageHint}
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover"
+              />
+            )}
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold font-headline mb-4">Our History & Commitment</h2>
+            <p className="text-muted-foreground mb-4">
+              Jan Vikas Kalyan Co-operative Thrift &amp; Credit Society Ltd. was founded with a singular mission: to foster a culture of saving and financial self-reliance among our members. We began our journey on March 13, 2015, after being officially registered under the Delhi Co-operative Societies (DCS) Act of 2003.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              With over 30,000 happy members, our operations are supervised by the Registrar of Co-operative Societies, Government of N.C.T. of Delhi. The society operates on co-operative principles and is managed by a team of experienced professionals dedicated to serving our members' interests with transparency and integrity.
+            </p>
+             <Card className="bg-secondary/50 border-primary/20">
+                <CardContent className="pt-6">
+                    <div className="flex items-start gap-4">
+                        <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold">Registration No: <span className="font-normal">10358/3TC/2015</span></p>
+                            <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
+                        </div>
+                    </div>
+                </CardContent>
+             </Card>
+          </div>
         </div>
 
         <div className="text-center mt-16 border-t pt-12">
