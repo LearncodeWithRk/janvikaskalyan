@@ -1,3 +1,4 @@
+
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,29 +9,29 @@ import { ArrowRight, Users, PiggyBank, Handshake, Landmark, Phone, Mail, ShieldC
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
-  const heroImages = [
-    getImage('cooperative-meeting'),
-    getImage('gallery3'),
-    getImage('gallery4'),
-  ].filter(Boolean);
-  
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
 
   const heroSlides = [
     {
-      title: "Your Partner in Financial Success",
-      description: "Join a community of over 30,000 members building a secure financial future together.",
+      title: "Celebrating To Become More Than 30,000 + Members",
+      description: "Established more than 11 years",
       image: getImage('cooperative-meeting'),
+      buttonText: "Become a member",
+      buttonLink: "/join",
     },
     {
-      title: "Savings & Loans, Simplified",
-      description: "Discover our member-friendly deposit schemes and get access to quick, hassle-free loans.",
+      title: "Saving Deposit",
+      description: "बचत पर अतिरिक्त Return of Investment पाने के लिए , सिर्फ एक क्लिक में अपना Saving Deposit Account खुलवाएं",
       image: getImage('gallery3'),
+      buttonText: "सम्पर्क करें",
+      buttonLink: "/contact",
     },
     {
-      title: "A Community Built on Trust",
-      description: "Since 2015, we have been committed to transparency, integrity, and the financial well-being of our members.",
+      title: "Loan",
+      description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
       image: getImage('gallery4'),
+      buttonText: "सम्पर्क करें",
+      buttonLink: "/contact",
     }
   ];
 
@@ -64,9 +65,10 @@ export default function Home() {
                     <p className="text-lg md:text-xl max-w-3xl mb-8 drop-shadow-md">
                       {slide.description}
                     </p>
-                    <Link href="/join">
+                    <Link href={slide.buttonLink}>
                       <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                        Become a Member <ArrowRight className="ml-2 h-5 w-5" />
+                        {slide.buttonText}
+                        {slide.buttonLink === '/join' && <ArrowRight className="ml-2 h-5 w-5" />}
                       </Button>
                     </Link>
                   </div>
@@ -223,3 +225,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
