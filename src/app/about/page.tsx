@@ -53,37 +53,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="my-16 md:my-24">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="flex-row items-center gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                    <Target className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardTitle className="text-3xl font-headline">Our Mission</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <p className="text-muted-foreground">
-                    To promote financial inclusion by encouraging savings habits and providing fair, accessible financial services. We aim to empower our members to achieve their financial goals through mutual cooperation and support.
-                    </p>
-                </CardContent>
-                </Card>
-                <Card className="shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="flex-row items-center gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                    <TrendingUp className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardTitle className="text-3xl font-headline">Our Vision</CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <p className="text-muted-foreground">
-                    To be the leading co-operative society in Delhi, recognized for our unwavering commitment to member prosperity, financial stability, and community development. We believe in growing together.
-                    </p>
-                </CardContent>
-                </Card>
-            </div>
-        </div>
-        
         <div className="my-16 md:my-24 text-center">
             <h2 className="text-3xl font-bold font-headline mb-12">Our Core Features</h2>
             <div className="grid md:grid-cols-3 gap-8">
