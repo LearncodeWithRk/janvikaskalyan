@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
-import { ArrowRight, Eye, Goal, HeartHandshake, Users } from 'lucide-react';
+import { ArrowRight, Eye, Goal, HeartHandshake, Users, BookOpenCheck, HeartPulse, Briefcase } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
@@ -113,8 +113,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Section */}
+      {/* Services Section */}
       <section className="py-16 md:py-24 bg-card">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12">Our Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                  <BookOpenCheck className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="font-headline mt-4">Education Programs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Providing quality education and learning resources for underprivileged children and adults.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                  <HeartPulse className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="font-headline mt-4">Healthcare Services</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Organizing medical camps and health awareness programs in remote and underserved areas.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                  <Briefcase className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="font-headline mt-4">Livelihood Support</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Empowering individuals with vocational training and skill development for sustainable income.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
+                  <Users className="h-10 w-10 text-primary" />
+                </div>
+                <CardTitle className="font-headline mt-4">Community Building</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Fostering strong community bonds through cultural events, workshops, and social initiatives.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section */}
+      <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Our Impact</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground mb-12">
@@ -141,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12">Our Activities</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
