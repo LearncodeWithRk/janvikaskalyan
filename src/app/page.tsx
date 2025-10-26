@@ -7,7 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/componen
 import { getImage, ImagePlaceholder } from '@/lib/placeholder-images';
 import { ArrowRight, Users, PiggyBank, Landmark, UserPlus } from 'lucide-react';
 import React, { useState, useEffect, useRef } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import { cn } from '@/lib/utils';
 
 const heroSlides = [
   {
@@ -296,18 +297,23 @@ export default function HomePage() {
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
         <DialogContent className="max-w-4xl p-0">
           {selectedImage && (
-            <Image
-              src={selectedImage.imageUrl}
-              alt={selectedImage.description}
-              width={1200}
-              height={800}
-              className="rounded-lg object-contain"
-            />
+            <>
+              <DialogTitle className="sr-only">{selectedImage.description}</DialogTitle>
+              <Image
+                src={selectedImage.imageUrl}
+                alt={selectedImage.description}
+                width={1200}
+                height={800}
+                className="rounded-lg object-contain"
+              />
+            </>
           )}
         </DialogContent>
       </Dialog>
     </div>
   );
 }
+
+    
 
     
