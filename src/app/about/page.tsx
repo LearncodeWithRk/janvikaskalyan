@@ -95,45 +95,6 @@ export default function AboutPage() {
             </div>
         </div>
 
-        <div className="my-16 md:my-24 text-center">
-            <h2 className="text-3xl font-bold font-headline mb-12">Our Core Features</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-                <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-4">
-                            <Shield className="h-10 w-10 text-primary" />
-                        </div>
-                        <CardTitle className="font-headline text-xl">Legal Compliance</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Governed by the DCS Act, 2003 for full security of your funds.</p>
-                    </CardContent>
-                </Card>
-                 <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-4">
-                            <Users className="h-10 w-10 text-primary" />
-                        </div>
-                        <CardTitle className="font-headline text-xl">Democratic Governance</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Power rests in the hands of our members, ensuring fairness for all.</p>
-                    </CardContent>
-                </Card>
-                <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-4">
-                            <Handshake className="h-10 w-10 text-primary" />
-                        </div>
-                        <CardTitle className="font-headline text-xl">Inclusive Services</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Tailored deposit and loan products are available to all our members.</p>
-                    </CardContent>
-                </Card>
-            </div>
-        </div>
-
         <div className="text-center mt-16 border-t pt-12">
             <h3 className="text-2xl font-headline mb-4">Join Our Community</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">At Jan Vikas Kalyan, we don’t just manage money — we nurture trust, stability, and community growth. Become a part of our journey today.</p>
