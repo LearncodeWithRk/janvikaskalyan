@@ -77,6 +77,12 @@
       "description": "Official registration certificate of the society.",
       "imageUrl": "https://images.unsplash.com/photo-1742415888265-d5044039d8e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTM5OTg4MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "certificate document"
+    },
+    {
+      "id": "digital-banking",
+      "description": "A person using a smartphone and laptop for online banking, with digital icons in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1600427145926-5837a03b53f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwYmFua2luZ3xlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital banking"
     }
   ]
 }
