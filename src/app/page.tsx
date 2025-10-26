@@ -3,14 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
-import { ArrowRight, Users, PiggyBank, Handshake, Landmark, Phone, Mail, ShieldCheck, TrendingUp, UserPlus, FileText, Smartphone, CreditCard, Home, Car } from 'lucide-react';
+import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, CreditCard, Smartphone, Home, Car } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
-export default function Home() {
-  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
-
+export default function HomePage() {
   const heroSlides = [
     {
       title: "Digital Banking at Your Fingertips",
