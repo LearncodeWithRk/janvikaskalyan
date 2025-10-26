@@ -256,17 +256,17 @@ export default function HomePage() {
            <div className="text-left mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Gallery</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
             {galleryImages.map((image, index) => (
               image && 
-              <div key={index} className="overflow-hidden rounded-lg shadow-md">
+              <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
                   data-ai-hint={image.imageHint}
                   width={400}
                   height={300}
-                  className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform"
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}
@@ -293,7 +293,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-    
-
-    
