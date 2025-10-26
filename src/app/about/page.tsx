@@ -8,6 +8,7 @@ import { getImage } from '@/lib/placeholder-images';
 
 export default function AboutPage() {
   const aboutImage = getImage('team-photo');
+  const certificateImage = getImage('registration-certificate');
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -73,12 +74,12 @@ export default function AboutPage() {
                     </CardHeader>
                 </Card>
             </div>
-            <div className="mt-16 max-w-2xl mx-auto">
-                <Card className="bg-secondary/50 border-primary/20">
-                    <CardHeader>
-                        <CardTitle className="text-2xl font-headline">Registration Certificate</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+            <div className="mt-16 max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold font-headline mb-8">Registration Certificate</h2>
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="grid md:grid-cols-2">
+                    <div className="p-6 flex flex-col justify-center">
                         <div className="flex items-start gap-4">
                             <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                             <div>
@@ -86,8 +87,22 @@ export default function AboutPage() {
                                 <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
                             </div>
                         </div>
-                    </CardContent>
-                </Card>
+                    </div>
+                    {certificateImage && (
+                       <div className="bg-muted">
+                         <Image
+                          src={certificateImage.imageUrl}
+                          alt={certificateImage.description}
+                          data-ai-hint={certificateImage.imageHint}
+                          width={600}
+                          height={800}
+                          className="w-full h-auto object-cover"
+                        />
+                       </div>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
             </div>
         </div>
 

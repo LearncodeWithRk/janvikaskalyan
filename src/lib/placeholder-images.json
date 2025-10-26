@@ -71,6 +71,12 @@
       "description": "A diagram showing a deposit being used as collateral for a loan.",
       "imageUrl": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBkaWFncmFtfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial diagram"
+    },
+    {
+      "id": "registration-certificate",
+      "description": "Official registration certificate of the society.",
+      "imageUrl": "https://images.unsplash.com/photo-1742415888265-d5044039d8e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTM5OTg4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "certificate document"
     }
   ]
 }
