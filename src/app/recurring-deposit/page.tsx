@@ -15,6 +15,13 @@ const interestRates = [
   { period: "5 Years", general: "13.00%", senior: "13.50%" },
 ];
 
+const maturityData = [
+    { deposit: 500, year1: "6,300", year2: "13,500", year3: "22,100", year4: "33,000", year5: "45,000" },
+    { deposit: 1000, year1: "12,601", year2: "27,000", year3: "44,200", year4: "66,000", year5: "90,000" },
+    { deposit: 2000, year1: "25,202", year2: "54,000", year3: "88,400", year4: "132,000", year5: "180,000" },
+    { deposit: 5000, year1: "63,005", year2: "135,000", year3: "221,000", year4: "330,000", year5: "450,000" },
+];
+
 
 export default function RecurringDepositPage() {
   const rdImage = getImage("recurring-deposit");
@@ -135,6 +142,39 @@ export default function RecurringDepositPage() {
             </Table>
             <CardContent>
                 <p className="text-xs text-muted-foreground pt-4">* Interest will be calculated on yearly basis. Senior citizen benefits available for members above 60 years of age.</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="my-16 md:my-24">
+          <h2 className="text-3xl font-bold font-headline text-center mb-12">RD Maturity Amount Chart</h2>
+          <Card className="max-w-6xl mx-auto shadow-lg">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-semibold">Deposit Per Month</TableHead>
+                  <TableHead className="font-semibold text-center">After 1 Year (9% Annual)</TableHead>
+                  <TableHead className="font-semibold text-center">After 2 Years (11% Annual)</TableHead>
+                  <TableHead className="font-semibold text-center">After 3 Years (13% Annual)</TableHead>
+                  <TableHead className="font-semibold text-center">After 4 Years (15% Annual)</TableHead>
+                  <TableHead className="font-semibold text-center">After 5 Years (15% Annual)</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {maturityData.map((row) => (
+                  <TableRow key={row.deposit}>
+                    <TableCell className="font-medium text-center">{row.deposit.toLocaleString()}</TableCell>
+                    <TableCell className="text-center">{row.year1}</TableCell>
+                    <TableCell className="text-center">{row.year2}</TableCell>
+                    <TableCell className="text-center">{row.year3}</TableCell>
+                    <TableCell className="text-center">{row.year4}</TableCell>
+                    <TableCell className="text-center">{row.year5}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+             <CardContent>
+                <p className="text-xs text-muted-foreground pt-4">* This is an example, actual returns may vary.</p>
             </CardContent>
           </Card>
         </div>
