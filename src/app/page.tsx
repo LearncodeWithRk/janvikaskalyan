@@ -186,23 +186,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Loans Section */}
-       <section className="py-16 md:py-24 bg-card">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Easy &amp; Accessible Loans for Members</h2>
-            <p className="text-muted-foreground mb-12">
-              As a member, you get access to a variety of loans with a simple application process and quick eligibility checks. We offer Personal Loans, Emergency Loans, and Loans Against Your Deposit to meet your financial needs.
-            </p>
-            <Link href="/loans">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                Learn About Loans <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
       
       {/* Join Us CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
