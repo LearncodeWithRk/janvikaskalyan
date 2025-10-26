@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { Mail, Phone, User, CheckCircle, UserPlus, FileText } from "lucide-react";
+import { Mail, Phone, User, CheckCircle, UserPlus, FileText, HelpCircle, Users, Check, Award, Shield } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -59,33 +60,80 @@ export default function JoinPage() {
 
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
-          <h2 className="text-2xl font-bold font-headline mb-4">Membership Benefits</h2>
-          <ul className="space-y-4 text-muted-foreground">
-              <li className="flex items-start">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                <span>Access to exclusive savings and deposit schemes with attractive returns.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                <span>Eligibility for a variety of loans at competitive interest rates.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                <span>Be a part of a financially sound and member-driven cooperative society.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                <span>Participate in the governance and decision-making process of the society.</span>
-              </li>
-          </ul>
-           <Card className="mt-8 bg-secondary/50">
-            <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl"><FileText /> Eligibility</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <p className="text-muted-foreground">To become a member, you must be a resident of Delhi and agree to the terms and conditions of the society. Submit the form to get started.</p>
-            </CardContent>
-           </Card>
+          <h2 className="text-2xl font-bold font-headline mb-4">Membership Information</h2>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                    <div className="flex items-center gap-2">
+                        <HelpCircle className="h-5 w-5 text-primary" /> Who can be a member?
+                    </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Any person who has attained the age of 18 years, is capable of entering a valid contract, a member of a Hindu undivided family, a business, a company registered under the Companies Act, a partnership firm, a limited liability partnership firm, any trust, or institution can become a member of the Society.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>
+                    <div className="flex items-center gap-2">
+                         <UserPlus className="h-5 w-5 text-primary" /> How to join the society?
+                    </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className="mb-4 text-muted-foreground">The application for membership shall be submitted by the applicant at any of the branches of the society, in the prescribed form with the following KYC documents:</p>
+                  <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                    <li><strong>ID Proof:</strong> Voter ID card, Aadhar Card, PAN Card, etc.</li>
+                    <li><strong>Address Proof:</strong> Electricity/Water Bill is compulsory.</li>
+                    <li><strong>Rent Agreement:</strong> Required for tenants, along with the landlord's Electricity/Water bill.</li>
+                    <li><strong>Photos:</strong> 2 latest passport-size photographs.</li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>
+                     <div className="flex items-center gap-2">
+                        <Award className="h-5 w-5 text-primary" /> What are the benefits of joining?
+                    </div>
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>Offers higher interest rates on deposits compared to banks.</span>
+                      </li>
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>No TDS is deducted on the interest earned on deposits.</span>
+                      </li>
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>Access to a wide range of savings and deposit schemes.</span>
+                      </li>
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>Hassle-free loan products with a simple application process.</span>
+                      </li>
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>Full transparency in all operations and dealings.</span>
+                      </li>
+                      <li className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                          <span>Professional, cooperative, and friendly staff to assist you.</span>
+                      </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+             <Card className="mt-8 bg-secondary/50 border-primary/20">
+                <CardContent className="pt-6">
+                    <div className="flex items-start gap-4">
+                        <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                        <div>
+                            <p className="font-semibold text-sm">The right to accept/reject membership application/s are reserved with the Management of the society.</p>
+                        </div>
+                    </div>
+                </CardContent>
+             </Card>
         </div>
 
         <div>
