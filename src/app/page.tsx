@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
 import { ArrowRight, Users, PiggyBank, Handshake, Landmark, Phone, Mail, ShieldCheck, TrendingUp, UserPlus, FileText } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -101,49 +101,69 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold font-headline text-center mb-12">Our Financial Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <FileText className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline mt-4">Fixed Deposit</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground">Grow your savings with attractive, fixed interest rates.</p>
               </CardContent>
+              <CardFooter className="pt-0">
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/plans">Learn More</Link>
+                </Button>
+              </CardFooter>
             </Card>
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <PiggyBank className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline mt-4">Recurring Deposit</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground">Build a corpus with small, regular monthly investments.</p>
               </CardContent>
+               <CardFooter className="pt-0">
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/plans">Learn More</Link>
+                </Button>
+              </CardFooter>
             </Card>
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <Landmark className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline mt-4">Saving Deposit</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground">Flexible savings account for your daily needs with interest.</p>
               </CardContent>
+               <CardFooter className="pt-0">
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/plans">Learn More</Link>
+                </Button>
+              </CardFooter>
             </Card>
-            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <ShieldCheck className="h-10 w-10 text-primary" />
                 </div>
                 <CardTitle className="font-headline mt-4">Compulsory Deposit</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground">A mandatory saving plan for members to foster thrift.</p>
               </CardContent>
+               <CardFooter className="pt-0">
+                <Button asChild variant="outline" className="w-full">
+                  <Link href="/plans">Learn More</Link>
+                </Button>
+              </CardFooter>
             </Card>
           </div>
            <div className="text-center mt-12">
