@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
-import { ArrowRight, Eye, Goal, HeartHandshake, Users, BookOpenCheck, HeartPulse, Briefcase } from 'lucide-react';
+import { ArrowRight, Users, HeartHandshake, BookOpenCheck, HeartPulse, Briefcase } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
@@ -77,40 +77,6 @@ export default function Home() {
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
         </Carousel>
-      </section>
-
-      {/* Mission and Vision Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <Card className="shadow-lg">
-              <CardHeader className="flex-row items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Goal className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-3xl font-headline">Our Mission</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  To empower marginalized communities through integrated programs in education, health, and livelihood, ensuring a life of dignity and self-reliance for all.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="shadow-lg">
-              <CardHeader className="flex-row items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Eye className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-3xl font-headline">Our Vision</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  We envision a just, equitable, and sustainable society where every individual has the opportunity to realize their full potential and contribute to the collective good.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
       </section>
 
       {/* Services Section */}
