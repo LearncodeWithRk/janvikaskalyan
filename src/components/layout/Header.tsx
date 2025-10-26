@@ -26,7 +26,7 @@ const navLinks = [
     href: "/plans", 
     label: "Our Plans",
     submenu: [
-      { href: "/plans#fixed-deposit", label: "Fixed Deposit" },
+      { href: "/fixed-deposit", label: "Fixed Deposit" },
       { href: "/plans#recurring-deposit", label: "Recurring Deposit" },
       { href: "/plans#saving-deposit", label: "Saving Deposit" },
       { href: "/plans#compulsory-deposit", label: "Compulsory Deposit" },
@@ -59,9 +59,9 @@ export function Header() {
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-0 p-0 h-auto",
                   "data-[state=open]:text-primary",
-                   pathname.startsWith(href) ? "text-primary font-bold" : "text-foreground/80",
+                   pathname.startsWith(href) || (href === '/plans' && pathname === '/fixed-deposit') ? "text-primary font-bold" : "text-foreground/80",
                    inSheet && "text-lg justify-start w-full",
-                   inSheet && pathname.startsWith(href) ? "text-primary" : inSheet ? "text-muted-foreground" : ""
+                   inSheet && (pathname.startsWith(href) || (href === '/plans' && pathname === '/fixed-deposit')) ? "text-primary" : inSheet ? "text-muted-foreground" : ""
                 )}
               >
                 {label}
@@ -126,7 +126,7 @@ export function Header() {
                       <div key={href}>
                         <h3 className={cn(
                            "text-lg font-medium transition-colors hover:text-primary flex items-center",
-                           pathname.startsWith(href) ? "text-primary" : "text-muted-foreground"
+                           pathname.startsWith(href) || (href === '/plans' && pathname === '/fixed-deposit') ? "text-primary" : "text-muted-foreground"
                          )}>
                           {label}
                         </h3>

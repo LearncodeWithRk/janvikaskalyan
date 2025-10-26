@@ -16,6 +16,7 @@ const plans = [
       "Loan facility available against your deposit.",
       "Safe and secure investment.",
     ],
+    href: "/fixed-deposit"
   },
   {
     id: "recurring-deposit",
@@ -27,6 +28,7 @@ const plans = [
       "Flexible monthly installment options.",
       "Competitive interest rates.",
     ],
+    href: "/contact"
   },
   {
     id: "saving-deposit",
@@ -38,6 +40,7 @@ const plans = [
       "No limit on the number of deposits.",
       "A safe place for your surplus cash.",
     ],
+    href: "/contact"
   },
   {
     id: "compulsory-deposit",
@@ -49,6 +52,7 @@ const plans = [
       "Contributes to the society's collective strength.",
       "Exclusive for Jan Vikas Kalyan members.",
     ],
+    href: "/contact"
   },
 ];
 
@@ -82,7 +86,7 @@ export default function PlansPage() {
                     ))}
                   </ul>
                   <Button asChild>
-                    <Link href="/contact">Get Started</Link>
+                    <Link href={plan.href}>Get Started</Link>
                   </Button>
                 </CardContent>
               </div>
