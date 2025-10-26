@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
-import { ArrowRight, Users, HeartHandshake, BookOpenCheck, HeartPulse, Briefcase } from 'lucide-react';
+import { ArrowRight, Users, HeartHandshake, BookOpenCheck, HeartPulse, Briefcase, HandHeart } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
@@ -128,6 +128,28 @@ export default function Home() {
                 <p className="text-muted-foreground">Fostering strong community bonds through cultural events, workshops, and social initiatives.</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Ready to Make a Difference?</h2>
+          <p className="max-w-2xl mx-auto text-primary-foreground/90 mb-8">
+            Your support can change lives. Join us in our mission to create a better tomorrow.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact">
+              <Button size="lg" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+                <Users className="mr-2 h-5 w-5" /> Get Involved
+              </Button>
+            </Link>
+            <Link href="/contact">
+               <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
+                <HandHeart className="mr-2 h-5 w-5" /> Donate Now
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
