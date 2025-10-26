@@ -34,10 +34,10 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold font-headline mb-4">Our History & Commitment</h2>
             <p className="text-muted-foreground mb-4">
-              Jan Vikas Kalyan Co-operative Thrift &amp; Credit Society Ltd. was founded with a singular mission: to foster a culture of saving and financial self-reliance among our members. We began our journey on March 13, 2015, after being officially registered under the Delhi Co-operative Societies (DCS) Act of 2003.
+              हम सभी लोग अपने घर से दूर एक दूसरे शहर में रह रहे हैं, जहाँ हम अपने बच्चो के लिए बेहतर भविष्य की तलाश कर रहे हैं। लेकिन इन सभी अवसरों को हासिल करने के लिए हमें अपनों कें साथ की आवश्कता होती हैं, लेकिन इस अनजान शहर में आर्थिक , सामाजिक साथ कहीं खो सा गया हैं, और जब जब मेने यह सोचा तब मुझे सभी के जीवन में अपनों की कमी और आर्थिक तंगी का एहसास हुआ जिसने मुझे झिंझोर दिया और संस्था की नींव रखने के लिए मजबूर कर दिया।
             </p>
             <p className="text-muted-foreground mb-6">
-              With over 30,000 happy members, our operations are supervised by the Registrar of Co-operative Societies, Government of N.C.T. of Delhi. The society operates on co-operative principles and is managed by a team of experienced professionals dedicated to serving our members' interests with transparency and integrity.
+              आज हम 11 वर्षो के अनुभव के साथ अपने 30,000+ के परिवार का निर्माण कर चुके हैं जहाँ पर सभी एक दूसरे के सहयोग से विकास के लिए तत्पर हैं। 11 वर्षो की यात्रा आसान नहीं थी और शायद आगे भी न हो लेकिन में एक बात जानता हूँ की जब तक आप लोगो का साथ मेरे साथ हैं, हम सभी लोग विकास करते रहेंगे।
             </p>
              <Card className="bg-secondary/50 border-primary/20">
                 <CardContent className="pt-6">
