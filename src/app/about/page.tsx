@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -31,12 +32,12 @@ export default function AboutPage() {
             )}
           </div>
           <div>
-            <h2 className="text-3xl font-bold font-headline mb-4">Our History</h2>
+            <h2 className="text-3xl font-bold font-headline mb-4">Our History & Commitment</h2>
             <p className="text-muted-foreground mb-4">
-              Jan Vikas Kalyan Co-operative Thrift &amp; Credit Society Ltd. was founded with a singular mission: to foster a culture of saving and financial self-reliance among our members. We began our journey on March 13, 2015, after being officially registered under the Delhi Co-operative Societies (DCS) Act of 2013.
+              Jan Vikas Kalyan Co-operative Thrift &amp; Credit Society Ltd. was founded with a singular mission: to foster a culture of saving and financial self-reliance among our members. We began our journey on March 13, 2015, after being officially registered under the Delhi Co-operative Societies (DCS) Act of 2003.
             </p>
             <p className="text-muted-foreground mb-6">
-              Our operations are supervised by the Registrar of Co-operative Societies, Government of N.C.T. of Delhi. The society operates based on co-operative principles and is managed by a team of experienced professionals dedicated to serving our members' interests.
+              With over 30,000 happy members, our operations are supervised by the Registrar of Co-operative Societies, Government of N.C.T. of Delhi. The society operates on co-operative principles and is managed by a team of experienced professionals dedicated to serving our members' interests with transparency and integrity.
             </p>
              <Card className="bg-secondary/50 border-primary/20">
                 <CardContent className="pt-6">
@@ -63,7 +64,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                     <p className="text-muted-foreground">
-                    To provide our members with secure, fair, and accessible financial services, promoting thrift, and enabling them to achieve their financial goals through mutual cooperation.
+                    To promote financial inclusion by encouraging savings habits and providing fair, accessible financial services. We aim to empower our members to achieve their financial goals through mutual cooperation and support.
                     </p>
                 </CardContent>
                 </Card>
@@ -76,7 +77,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                     <p className="text-muted-foreground">
-                    To be the leading co-operative society in Delhi, recognized for our commitment to member prosperity, financial stability, and community development.
+                    To be the leading co-operative society in Delhi, recognized for our unwavering commitment to member prosperity, financial stability, and community development. We believe in growing together.
                     </p>
                 </CardContent>
                 </Card>
@@ -101,31 +102,38 @@ export default function AboutPage() {
                     </li>
                     <li className="flex items-center gap-4">
                         <TrendingUp className="h-6 w-6 text-accent" />
-                        <span className="font-medium text-lg">Sustainable Growth</span>
+                        <span className="font-medium text-lg">Financial Literacy & Empowerment</span>
                     </li>
                 </ul>
             </div>
              <div>
-                <h2 className="text-3xl font-bold font-headline mb-6 text-center md:text-left">Our Features</h2>
+                <h2 className="text-3xl font-bold font-headline mb-6 text-center md:text-left">Why Choose Us?</h2>
                 <ul className="space-y-4">
-                    <li className="flex items-center gap-4">
-                        <Check className="h-6 w-6 text-green-500" />
-                        <span className="text-muted-foreground">Governed by DCS Act, 2013 for full legal compliance.</span>
+                    <li className="flex items-start gap-4">
+                        <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                        <span className="text-muted-foreground">Governed by the DCS Act, 2003 for full legal compliance and security of your funds.</span>
                     </li>
-                    <li className="flex items-center gap-4">
-                        <Check className="h-6 w-6 text-green-500" />
-                        <span className="text-muted-foreground">Democratic governance with power in members' hands.</span>
+                    <li className="flex items-start gap-4">
+                        <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                        <span className="text-muted-foreground">Democratic governance where power rests in the hands of our members.</span>
                     </li>
-                    <li className="flex items-center gap-4">
-                        <Check className="h-6 w-6 text-green-500" />
-                        <span className="text-muted-foreground">A wide range of deposit and loan products.</span>
+                    <li className="flex items-start gap-4">
+                        <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                        <span className="text-muted-foreground">A wide range of deposit and loan products tailored to your needs.</span>
                     </li>
-                    <li className="flex items-center gap-4">
-                        <Check className="h-6 w-6 text-green-500" />
-                        <span className="text-muted-foreground">Services available to all members, regardless of their background.</span>
+                    <li className="flex items-start gap-4">
+                        <Check className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
+                        <span className="text-muted-foreground">Services are available to all members, promoting inclusivity and equal opportunity.</span>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div className="text-center mt-16 border-t pt-12">
+            <h3 className="text-2xl font-headline mb-4">Join Our Community</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-6">At Jan Vikas Kalyan, we don’t just manage money — we nurture trust, stability, and community growth. Become a part of our journey today.</p>
+            <Button asChild size="lg">
+                <Link href="/join">Become a Member</Link>
+            </Button>
         </div>
       </div>
     </div>
