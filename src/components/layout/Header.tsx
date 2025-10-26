@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, HandHeart } from "lucide-react";
+import { Menu, Landmark } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
@@ -16,8 +16,9 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
-  { href: "/documents", label: "Documents" },
-  { href: "/resources", label: "Resources" },
+  { href: "/plans", label: "Our Plans" },
+  { href: "/loans", label: "Loans" },
+  { href: "/join", label: "Join Us" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -32,7 +33,7 @@ export function Header() {
           href={href}
           className={cn(
             "text-sm font-medium transition-colors hover:text-primary",
-            pathname === href ? "text-primary" : "text-muted-foreground"
+            pathname === href ? "text-primary font-bold" : "text-foreground/80"
           )}
         >
           {label}
@@ -45,7 +46,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-card shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <HandHeart className="h-6 w-6 text-primary" />
+          <Landmark className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">Jan Vikas Kalyan</span>
         </Link>
 
@@ -64,7 +65,7 @@ export function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2">
-                  <HandHeart className="h-6 w-6 text-primary" />
+                  <Landmark className="h-6 w-6 text-primary" />
                   <span className="font-bold">Jan Vikas Kalyan</span>
                 </Link>
                 <nav className="grid gap-4">

@@ -5,8 +5,8 @@ import { Footer } from '@/components/layout/Footer';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Jan Vikas Kalyan Portal',
-  description: 'A portal for information, documents, and resources for Jan Vikas Kalyan.',
+  title: 'Jan Vikas Kalyan Co-operative Society Ltd.',
+  description: 'Jan Vikas Kalyan Co-operative Society Ltd. – a trusted one-stop financial partner in Delhi offering savings, deposits & member-friendly loans to over 30,000 members.',
 };
 
 export default function RootLayout({

@@ -1,52 +1,76 @@
 {
   "placeholderImages": [
     {
-      "id": "hero",
-      "description": "Community working together in a bright, sunlit room.",
-      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21tdW5pdHklMjBtZWV0aW5nfGVufDB8fHx8MTc2MTQ0NDcxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community meeting"
+      "id": "cooperative-meeting",
+      "description": "A diverse group of people in a professional meeting, looking at a presentation.",
+      "imageUrl": "https://images.unsplash.com/photo-1623120893054-6004263f48e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb29wZXJhdGl2ZSUyMG1lZXRpbmd8ZW58MHx8fHwxNzYxNDY3OTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cooperative meeting"
     },
     {
-      "id": "hero2",
-      "description": "Children studying in an outdoor classroom setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1760987709205-8759c7e9e89a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvdXRkb29yJTIwY2xhc3Nyb29tfGVufDB8fHx8MTc2MTQ2NzE3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "outdoor classroom"
-    },
-    {
-      "id": "hero3",
-      "description": "A doctor checking a patient's health in a village.",
-      "imageUrl": "https://images.unsplash.com/photo-1742106850780-fbcc50b1ef5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxydXJhbCUyMGhlYWx0aGNhcmV8ZW58MHx8fHwxNzYxNDY3MTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rural healthcare"
-    },
-    {
-      "id": "mission",
-      "description": "A person helping another climb a small hill.",
-      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoZWxwaW5nJTIwaGFuZHxlbnwwfHx8fDE3NjE0MTIyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "helping hand"
+      "id": "team-photo",
+      "description": "A friendly and professional team standing together, smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDB8fHx8MTc2MTQ1MzYzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional team"
     },
     {
       "id": "gallery1",
-      "description": "Children smiling and learning in a classroom.",
-      "imageUrl": "https://images.unsplash.com/photo-1605627079912-97c3810a11a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZHJlbiUyMGVkdWNhdGlvbnxlbnwwfHx8fDE3NjE0NjE2OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "children education"
+      "description": "Members participating in a community event.",
+      "imageUrl": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjE0NDU4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community event"
     },
     {
       "id": "gallery2",
-      "description": "Volunteers planting trees in a field.",
-      "imageUrl": "https://images.unsplash.com/photo-1758599668949-5118d71838fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx2b2x1bnRlZXJzJTIwZW52aXJvbm1lbnR8ZW58MHx8fHwxNzYxNDYxNjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "volunteers environment"
+      "description": "The modern and welcoming interior of a society branch.",
+      "imageUrl": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE0MTAzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office interior"
     },
     {
       "id": "gallery3",
-      "description": "Distribution of food packages to people in need.",
-      "imageUrl": "https://images.unsplash.com/photo-1609139027234-57570f43f692?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDB8fHx8MTc2MTQwMTU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "food distribution"
+      "description": "A happy member receiving financial advice from a staff member.",
+      "imageUrl": "https://images.unsplash.com/photo-1600493033157-eed3fbe95d96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNpYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzYxNDEwNzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial advice"
     },
     {
       "id": "gallery4",
-      "description": "A medical camp in a rural village.",
-      "imageUrl": "https://images.unsplash.com/photo-1632751796718-3185246913ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwY2FtcHxlbnwwfHx8fDE3NjE0NjcwNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medical camp"
+      "description": "A group of members celebrating a society milestone.",
+      "imageUrl": "https://images.unsplash.com/photo-1760638260981-2af5fc0c9c57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncm91cCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "group celebration"
+    },
+    {
+      "id": "fixed-deposit",
+      "description": "A visual representation of secure savings and growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1582139329536-e7284fece509?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "secure savings"
+    },
+    {
+      "id": "recurring-deposit",
+      "description": "A stack of coins growing over time, representing regular savings.",
+      "imageUrl": "https://images.unsplash.com/photo-1539009139598-75df7c89734d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxncm93aW5nJTIwY29pbnN8ZW58MHx8fHwxNzYxNDY3OTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "growing coins"
+    },
+    {
+      "id": "saving-deposit",
+      "description": "An easily accessible piggy bank, symbolizing flexible savings.",
+      "imageUrl": "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWdneSUyMGJhbmt8ZW58MHx8fHwxNzYxNDIyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "piggy bank"
+    },
+    {
+      "id": "personal-loan",
+      "description": "A happy person holding keys to a new car or home.",
+      "imageUrl": "https://images.unsplash.com/photo-1533147670608-2a2f9775d3a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NjE0NDIxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "emergency-loan",
+      "description": "An image conveying speed and support, like a helping hand.",
+      "imageUrl": "https://images.unsplash.com/photo-1558522195-e1201b090344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoZWxwaW5nJTIwaGFuZHxlbnwwfHx8fDE3NjE0MTIyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "helping hand"
+    },
+    {
+      "id": "loan-against-deposit",
+      "description": "A diagram showing a deposit being used as collateral for a loan.",
+      "imageUrl": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaW5hbmNpYWwlMjBkaWFncmFtfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial diagram"
     }
   ]
 }

@@ -41,27 +41,23 @@ export default function ContactPage() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you would send this data to your backend.
-    // For this demo, we'll simulate a successful submission.
     console.log(values);
     
-    // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     toast({
       title: "Message Sent!",
       description: "Thank you for contacting us. We will get back to you shortly.",
     });
-
-    // On successful "submission", redirect to a thank you page.
-    router.push("/thank-you");
+    
+    form.reset();
   }
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <h1 className="text-3xl md:text-4xl font-bold font-headline text-center mb-4">Get In Touch</h1>
       <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-        Have questions or want to get involved? Send us a message or find our contact details below.
+        Have questions about our plans, loans, or membership? We're here to help.
       </p>
 
       <div className="grid md:grid-cols-5 gap-12">
@@ -103,7 +99,7 @@ export default function ContactPage() {
                       <FormItem>
                         <FormLabel>Subject</FormLabel>
                         <FormControl>
-                          <Input placeholder="Regarding volunteering" {...field} />
+                          <Input placeholder="Question about Fixed Deposits" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -139,7 +135,7 @@ export default function ContactPage() {
             </div>
             <div>
               <h4 className="font-semibold">Our Office</h4>
-              <p className="text-muted-foreground">123 Welfare Lane, Development City, Nation 12345</p>
+              <p className="text-muted-foreground">Location in Delhi, India</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -157,7 +153,8 @@ export default function ContactPage() {
             </div>
             <div>
               <h4 className="font-semibold">Call Us</h4>
-              <p className="text-muted-foreground">(123) 456-7890</p>
+              <p className="text-muted-foreground">+91 9625380067</p>
+              <p className="text-muted-foreground">+91 9205437299</p>
             </div>
           </div>
         </div>
