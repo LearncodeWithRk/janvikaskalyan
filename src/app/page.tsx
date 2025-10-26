@@ -129,7 +129,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Fixed Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">Grow your savings with attractive, fixed interest rates.</p>
+                <p className="text-muted-foreground">Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…</p>
               </CardContent>
               <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -145,7 +145,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Recurring Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">Build a corpus with small, regular monthly investments.</p>
+                <p className="text-muted-foreground">Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -158,10 +158,10 @@ export default function Home() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <Landmark className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="font-headline mt-4">Saving Deposit</CardTitle>
+                <CardTitle className="font-headline mt-4">Saving Account</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">Flexible savings account for your daily needs with interest.</p>
+                <p className="text-muted-foreground">It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -172,16 +172,16 @@ export default function Home() {
             <Card className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
-                  <ShieldCheck className="h-10 w-10 text-primary" />
+                  <Handshake className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="font-headline mt-4">Compulsory Deposit</CardTitle>
+                <CardTitle className="font-headline mt-4">Loan</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">A mandatory saving plan for members to foster thrift.</p>
+                <p className="text-muted-foreground">A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
-                  <Link href="/plans">Learn More</Link>
+                  <Link href="/loans">Learn More</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -227,6 +227,8 @@ export default function Home() {
 }
 
     
+    
+
     
 
     
