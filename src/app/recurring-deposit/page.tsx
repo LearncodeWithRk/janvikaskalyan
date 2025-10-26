@@ -2,9 +2,19 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
+const interestRates = [
+  { period: "1 Year", general: "11.00%", senior: "11.50%" },
+  { period: "2 Years", general: "11.50%", senior: "12.00%" },
+  { period: "3 Years", general: "12.00%", senior: "12.50%" },
+  { period: "4 Years", general: "12.50%", senior: "13.00%" },
+  { period: "5 Years", general: "13.00%", senior: "13.50%" },
+];
+
 
 export default function RecurringDepositPage() {
   const rdImage = getImage("recurring-deposit");
@@ -101,6 +111,34 @@ export default function RecurringDepositPage() {
                 </Card>
             </div>
         </div>
+
+        <div className="my-16 md:my-24">
+          <h2 className="text-3xl font-bold font-headline text-center mb-12">Recurring Deposit Interest Rates</h2>
+          <Card className="max-w-4xl mx-auto shadow-lg">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-semibold">Period</TableHead>
+                  <TableHead className="font-semibold text-center">Rate of Interest (p.a.) for General Public</TableHead>
+                  <TableHead className="font-semibold text-center">Rate of Interest (p.a.) for Senior Citizen</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {interestRates.map((rate) => (
+                  <TableRow key={rate.period}>
+                    <TableCell className="font-medium">{rate.period}</TableCell>
+                    <TableCell className="text-center">{rate.general}</TableCell>
+                    <TableCell className="text-center">{rate.senior}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+            <CardContent>
+                <p className="text-xs text-muted-foreground pt-4">* Interest will be calculated on yearly basis. Senior citizen benefits available for members above 60 years of age.</p>
+            </CardContent>
+          </Card>
+        </div>
+
 
         <div className="grid md:grid-cols-2 gap-12">
             <Card className="shadow-lg">
