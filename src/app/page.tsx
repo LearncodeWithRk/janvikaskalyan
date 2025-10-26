@@ -11,25 +11,25 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function HomePage() {
   const heroSlides = [
     {
-      title: "Digital Banking at Your Fingertips",
-      description: "Securely manage your finances anytime, anywhere. Open accounts, transfer funds, and pay bills with ease.",
-      image: getImage('digital-banking'),
-      buttonText: "Explore Digital Services",
-      buttonLink: "/plans",
-    },
-    {
-      title: "Your Financial Goals, Our Priority",
-      description: "Achieve your dreams with our tailored loan and investment solutions. Let's build your future together.",
-      image: getImage('gallery4'),
-      buttonText: "View Loan Options",
-      buttonLink: "/loans",
-    },
-    {
-      title: "Trusted by Millions, Built for You",
-      description: "Join a community that values security, growth, and customer satisfaction above all else.",
+      title: "Celebrating To Become More Than 30,000 + Members",
+      description: "Established more than 11 years",
       image: getImage('cooperative-meeting'),
-      buttonText: "Become a Member",
+      buttonText: "Become a member",
       buttonLink: "/join",
+    },
+    {
+      title: "Saving Deposit",
+      description: "बचत पर अतिरिक्त Return of Investment पाने के लिए , सिर्फ एक क्लिक में अपना Saving Deposit Account खुलवाएं",
+      image: getImage('saving-deposit'),
+      buttonText: "सम्पर्क करें",
+      buttonLink: "/contact",
+    },
+    {
+      title: "Loan",
+      description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
+      image: getImage('loan-against-deposit'),
+      buttonText: "सम्पर्क करें",
+      buttonLink: "/contact",
     }
   ];
 
@@ -41,11 +41,13 @@ export default function HomePage() {
   ];
 
   const products = [
-    { title: "Savings Accounts", description: "Competitive interest rates and features to help your money grow.", icon: PiggyBank, href: "/plans#saving-deposit" },
-    { title: "Home Loans", description: "Turn your dream of owning a home into a reality with our flexible financing.", icon: Home, href: "/loans" },
-    { title: "Personal Loans", description: "Fund your needs, from vacations to weddings, with our easy loan process.", icon: Users, href: "/loans#personal-loan" },
-    { title: "Car Loans", description: "Get behind the wheel of your new car with our attractive loan options.", icon: Car, href: "/loans" },
+    { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/plans#fixed-deposit" },
+    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/plans#recurring-deposit" },
+    { title: "Saving Deposit", description: "Flexible savings account for your daily needs with interest.", icon: Home, href: "/plans#saving-deposit" },
+    { title: "Compulsory Deposit", description: "A mandatory saving plan for members to foster thrift.", icon: Car, href: "/plans#compulsory-deposit" },
   ];
+
+  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
 
   return (
     <div className="flex flex-col bg-background">
@@ -93,30 +95,45 @@ export default function HomePage() {
         </Carousel>
       </section>
 
-      {/* Quick Links Section */}
-      <section className="py-16 bg-card">
+      {/* About Us Section */}
+       <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {quickLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="group">
-                <Card className="text-center hover:bg-primary/5 hover:border-primary/50 transition-all">
-                  <CardContent className="p-6 flex flex-col items-center justify-center gap-3">
-                    <div className="bg-primary/10 p-3 rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <link.icon className="h-7 w-7 text-primary group-hover:text-primary-foreground transition-colors" />
-                    </div>
-                    <p className="font-semibold text-sm md:text-base">{link.label}</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About Us</h2>
+              <p className="text-muted-foreground mb-6">
+                Established on March 13, 2015, Jan Vikas Kalyan Co-operative Society is registered under the DCS Act 2013 (Reg. No. 10358/3TC/2015). We are committed to the financial empowerment of our members through a culture of savings and mutual support.
+              </p>
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <p className="text-3xl font-bold text-primary">30,000+</p>
+                  <p className="text-sm text-muted-foreground">Members</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-primary">11+</p>
+                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-primary">24/7</p>
+                  <p className="text-sm text-muted-foreground">Team Support</p>
+                </div>
+              </div>
+            </div>
+            {getImage('team-photo') &&
+              <div className="hidden md:block">
+                  <Image src={getImage('team-photo')!.imageUrl} alt="Jan Vikas Kalyan Team" width={600} height={400} className="rounded-lg shadow-lg" data-ai-hint="professional team"/>
+              </div>
+            }
           </div>
         </div>
       </section>
 
-      {/* Our Products Section */}
+      {/* Our Plans Section */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-12 text-center">Our Products</h2>
+          <div className="text-left mb-12">
+             <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Plans</h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.map((product) => (
               <Card key={product.title} className="flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow">
@@ -135,6 +152,30 @@ export default function HomePage() {
                   </Button>
                 </CardFooter>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16 md:py-24 bg-card">
+        <div className="container mx-auto px-4">
+           <div className="text-left mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">Gallery</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {galleryImages.map((image, index) => (
+              image && 
+              <div key={index} className="overflow-hidden rounded-lg shadow-md">
+                <Image
+                  src={image.imageUrl}
+                  alt={image.description}
+                  data-ai-hint={image.imageHint}
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform"
+                />
+              </div>
             ))}
           </div>
         </div>
