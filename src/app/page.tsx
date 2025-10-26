@@ -6,45 +6,174 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
 import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, CreditCard, Smartphone, Home, Car } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import React, { useState, useEffect, useRef } from 'react';
+
+const heroSlides = [
+  {
+    title: "Celebrating To Become More Than 30,000 + Members",
+    description: "Established more than 11 years",
+    image: getImage('cooperative-meeting'),
+    buttonText: "Become a member",
+    buttonLink: "/join",
+    bgColor: "#f0f4ff",
+    textColor: "#0d244f",
+  },
+  {
+    title: "Saving Deposit",
+    description: "बचत पर अतिरिक्त Return of Investment पाने के लिए , सिर्फ एक क्लिक में अपना Saving Deposit Account खुलवाएं",
+    image: getImage('saving-deposit'),
+    buttonText: "सम्पर्क करें",
+    buttonLink: "/contact",
+    bgColor: "#e8f5e9",
+    textColor: "#1b5e20",
+  },
+  {
+    title: "Loan",
+    description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
+    image: getImage('loan-against-deposit'),
+    buttonText: "सम्पर्क करें",
+    buttonLink: "/contact",
+    bgColor: "#fff8e1",
+    textColor: "#f57f17",
+  }
+];
+
+function HeroSlider() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const stickyPanelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollableHeight = container.scrollHeight - window.innerHeight;
+      const stepHeight = scrollableHeight / heroSlides.length;
+      const newActiveIndex = Math.min(
+        heroSlides.length - 1,
+        Math.floor(container.scrollTop / stepHeight)
+      );
+      setActiveIndex(newActiveIndex);
+    };
+
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const dynamicStyles = {
+    backgroundColor: heroSlides[activeIndex].bgColor,
+    color: heroSlides[activeIndex].textColor,
+    transition: 'background-color 0.7s ease, color 0.7s ease',
+  };
+
+  const gridPatternStyle = {
+    '--grid-color': 'rgba(0, 0, 0, 0.05)',
+    backgroundImage: `
+      linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
+    `,
+    backgroundSize: '3.5rem 3.5rem',
+  };
+
+  return (
+    <div
+      ref={scrollContainerRef}
+      className="h-[85vh] w-full overflow-y-auto"
+      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+    >
+      <div style={{ height: `${heroSlides.length * 100}vh` }}>
+        <div ref={stickyPanelRef} className="sticky top-0 h-[85vh] w-full flex flex-col items-center justify-center" style={dynamicStyles}>
+          <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full max-w-7xl mx-auto">
+
+            {/* Left Column: Text Content, Pagination & Button */}
+            <div className="relative flex flex-col justify-center p-8 md:p-16 border-r border-black/10">
+              {/* Pagination Bars */}
+              <div className="absolute top-8 left-8 md:top-16 md:left-16 flex space-x-2">
+                {heroSlides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      const container = scrollContainerRef.current;
+                      if (container) {
+                        const scrollableHeight = container.scrollHeight - window.innerHeight;
+                        const stepHeight = scrollableHeight / heroSlides.length;
+                        container.scrollTo({ top: stepHeight * index, behavior: 'smooth' });
+                      }
+                    }}
+                    className={`h-1 rounded-full transition-all duration-500 ease-in-out ${
+                      index === activeIndex ? 'w-12 bg-black/80' : 'w-6 bg-black/20'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <div className="relative h-64 w-full">
+                {heroSlides.map((slide, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                      index === activeIndex
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 translate-y-10'
+                    }`}
+                  >
+                    <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">{slide.title}</h2>
+                    <p className="mt-6 text-lg md:text-xl max-w-md">{slide.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Get Started Button */}
+              <div className="absolute bottom-8 left-8 md:bottom-16 md:left-16">
+                 <Link href={heroSlides[activeIndex].buttonLink}>
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                      {heroSlides[activeIndex].buttonText}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+              </div>
+            </div>
+
+            {/* Right Column: Image Content with Grid Background */}
+            <div className="hidden md:flex items-center justify-center p-8" style={gridPatternStyle}>
+              <div className="relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-black/5">
+                <div
+                  className="absolute top-0 left-0 w-full h-full transition-transform duration-700 ease-in-out"
+                  style={{ transform: `translateY(-${activeIndex * 100}%)` }}
+                >
+                  {heroSlides.map((slide, index) => (
+                    <div key={index} className="w-full h-full">
+                      {slide.image &&
+                        <Image
+                          src={slide.image.imageUrl}
+                          alt={slide.title}
+                          className="h-full w-full object-cover"
+                          width={800}
+                          height={1200}
+                          priority={index === 0}
+                          unoptimized
+                        />
+                      }
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function HomePage() {
-  const heroSlides = [
-    {
-      title: "Celebrating To Become More Than 30,000 + Members",
-      description: "Established more than 11 years",
-      image: getImage('cooperative-meeting'),
-      buttonText: "Become a member",
-      buttonLink: "/join",
-    },
-    {
-      title: "Saving Deposit",
-      description: "बचत पर अतिरिक्त Return of Investment पाने के लिए , सिर्फ एक क्लिक में अपना Saving Deposit Account खुलवाएं",
-      image: getImage('saving-deposit'),
-      buttonText: "सम्पर्क करें",
-      buttonLink: "/contact",
-    },
-    {
-      title: "Loan",
-      description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
-      image: getImage('loan-against-deposit'),
-      buttonText: "सम्पर्क करें",
-      buttonLink: "/contact",
-    }
-  ];
-
-  const quickLinks = [
-    { label: "Open an Account", icon: UserPlus, href: "/join" },
-    { label: "Apply for a Loan", icon: Landmark, href: "/loans" },
-    { label: "Credit Cards", icon: CreditCard, href: "/plans" },
-    { label: "Mobile Banking", icon: Smartphone, href: "/contact" },
-  ];
-
   const products = [
-    { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/plans#fixed-deposit" },
-    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/plans#recurring-deposit" },
-    { title: "Saving Deposit", description: "Flexible savings account for your daily needs with interest.", icon: Home, href: "/plans#saving-deposit" },
-    { title: "Compulsory Deposit", description: "A mandatory saving plan for members to foster thrift.", icon: Car, href: "/plans#compulsory-deposit" },
+    { title: "Recurring Deposit", description: "Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …", icon: Users, href: "/plans#recurring-deposit" },
+    { title: "Fixed Deposit", description: "Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…", icon: PiggyBank, href: "/fixed-deposit" },
+    { title: "Saving Account", description: "It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…", icon: Home, href: "/plans#saving-deposit" },
+    { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
   ];
 
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
@@ -53,46 +182,7 @@ export default function HomePage() {
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
       <section className="relative w-full h-[85vh] bg-primary/10">
-        <Carousel
-          opts={{ loop: true }}
-          className="w-full h-full"
-        >
-          <CarouselContent>
-            {heroSlides.map((slide, index) => (
-              <CarouselItem key={index}>
-                <div className="relative w-full h-[85vh]">
-                  {slide.image && (
-                    <Image
-                      src={slide.image.imageUrl}
-                      alt={slide.image.description}
-                      data-ai-hint={slide.image.imageHint}
-                      fill
-                      className="object-cover"
-                      priority={index === 0}
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                  <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-end text-center text-white pb-20 md:pb-24">
-                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 drop-shadow-lg">
-                      {slide.title}
-                    </h1>
-                    <p className="text-lg md:text-xl max-w-3xl mb-8 drop-shadow-md">
-                      {slide.description}
-                    </p>
-                    <Link href={slide.buttonLink}>
-                      <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                        {slide.buttonText}
-                        <ArrowRight className="ml-2 h-5 w-5" />
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-none" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-none" />
-        </Carousel>
+        <HeroSlider />
       </section>
 
       {/* About Us Section */}
@@ -200,3 +290,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    
