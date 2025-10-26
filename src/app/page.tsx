@@ -1,42 +1,82 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getImage } from '@/lib/placeholder-images';
 import { ArrowRight, Eye, Goal, HeartHandshake, Users } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
   const heroImage = getImage('hero');
+  const heroImage2 = getImage('hero2');
+  const heroImage3 = getImage('hero3');
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
+
+  const heroSlides = [
+    {
+      image: heroImage,
+      title: 'Empowering Communities, Changing Lives',
+      description: 'Jan Vikas Kalyan is dedicated to fostering sustainable development and social equity through community-led initiatives.',
+      buttonText: 'Get Involved',
+      buttonLink: '/contact',
+    },
+    {
+      image: heroImage2,
+      title: 'Education for Every Child',
+      description: 'Join us in our mission to provide quality education and a brighter future for underprivileged children.',
+      buttonText: 'Learn More',
+      buttonLink: '/documents',
+    },
+    {
+      image: heroImage3,
+      title: 'A Healthy Community is a Strong Community',
+      description: 'Support our health programs that bring essential medical care to remote areas.',
+      buttonText: 'Donate Now',
+      buttonLink: '/contact',
+    },
+  ];
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            data-ai-hint={heroImage.imageHint}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-            Empowering Communities, Changing Lives
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mb-8">
-            Jan Vikas Kalyan is dedicated to fostering sustainable development and social equity through community-led initiatives.
-          </p>
-          <Link href="/contact">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Get Involved <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
+      <section className="relative w-full">
+        <Carousel className="w-full" opts={{ loop: true }}>
+          <CarouselContent>
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[60vh] md:h-[70vh] w-full">
+                  {slide.image && (
+                    <Image
+                      src={slide.image.imageUrl}
+                      alt={slide.image.description}
+                      data-ai-hint={slide.image.imageHint}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
+                      {slide.title}
+                    </h1>
+                    <p className="text-lg md:text-xl max-w-3xl mb-8">
+                      {slide.description}
+                    </p>
+                    <Link href={slide.buttonLink}>
+                      <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                        {slide.buttonText} <ArrowRight className="ml-2 h-5 w-5" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+        </Carousel>
       </section>
 
       {/* Mission and Vision Section */}
