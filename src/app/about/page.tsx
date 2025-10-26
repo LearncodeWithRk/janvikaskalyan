@@ -81,11 +81,10 @@ export default function AboutPage() {
                   <div className="grid md:grid-cols-2">
                     <div className="p-6 flex flex-col justify-center">
                         <div className="flex items-start gap-4">
-                            <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                            <div>
-                                <p className="font-semibold">Registration No: <span className="font-normal">10358/Sec-3/TC/2015</span></p>
-                                <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
-                            </div>
+                            <FileText className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+                            <p className="text-muted-foreground">
+                              Jan Vikas Kalyan Co-operative Thrift & Credit Society Limited (henceforth referred to as Jan Vikas Kalyan or the Society) is a Thrift & Credit Cooperative Society registered under the Delhi Cooperative Society (DCS) Act 2013. The registration number of the Society is (10358/Sec-3/TC/2015). The Society was registered with the Registrar of Cooperative Societies, Delhi on 13th of March 2015.
+                            </p>
                         </div>
                     </div>
                     {certificateImage && (
