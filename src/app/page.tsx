@@ -192,10 +192,10 @@ export default function Home() {
       {/* Join Us CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8">Join Our Growing Family</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8">अब ज्यादा होगी बचत , जब मिलेगा ज्यादा Return of Investment.</h2>
           <Link href="/join">
             <Button size="lg" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <UserPlus className="mr-2 h-5 w-5" /> Join Us Today
+              <UserPlus className="mr-2 h-5 w-5" /> Become a member
             </Button>
           </Link>
         </div>
