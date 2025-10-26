@@ -172,7 +172,7 @@ function HeroSlider() {
 
 export default function HomePage() {
   const products = [
-    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/plans#recurring-deposit" },
+    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/recurring-deposit" },
     { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/fixed-deposit" },
     { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: Landmark, href: "/plans#saving-deposit" },
     { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },

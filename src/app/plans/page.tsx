@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,7 @@ const plans = [
       "Flexible monthly installment options.",
       "Competitive interest rates.",
     ],
-    href: "/contact"
+    href: "/recurring-deposit"
   },
   {
     id: "saving-deposit",
