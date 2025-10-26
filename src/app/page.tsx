@@ -88,7 +88,7 @@ export default function Home() {
                 <div>
                     <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About us</h2>
                     <p className="text-muted-foreground mb-6">
-                        Jan Vikas Kalyan Co-operative Thrift & Credit Society Limited (hence forth referred to as Jan Vikas Kalyan or the Society) is a Thrift & Credit Cooperative Society registered under the Delhi Cooperative Society (DCS) Act 2013. The registration number of the Society is (10358/Sec-3/TC/2015). The Society was registered with the Registrar of Cooperative Societies, Delhi on 13th of March 2015.
+                        Established on March 13, 2015, Jan Vikas Kalyan Co-operative Society is registered under the DCS Act 2013 (Reg. No. 10358/3TC/2015). We are committed to the financial empowerment of our members through a culture of savings and mutual support.
                     </p>
                     <Link href="/about">
                       <Button variant="outline" className="text-primary border-primary hover:bg-primary/10">
@@ -129,7 +129,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Fixed Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…</p>
+                <p className="text-muted-foreground">Grow your savings with attractive, fixed interest rates.</p>
               </CardContent>
               <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -145,7 +145,7 @@ export default function Home() {
                 <CardTitle className="font-headline mt-4">Recurring Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …</p>
+                <p className="text-muted-foreground">Build a corpus with small, regular monthly investments.</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -158,10 +158,10 @@ export default function Home() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <Landmark className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="font-headline mt-4">Saving Account</CardTitle>
+                <CardTitle className="font-headline mt-4">Saving Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…</p>
+                <p className="text-muted-foreground">Flexible savings account for your daily needs with interest.</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -174,10 +174,10 @@ export default function Home() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
                   <Handshake className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="font-headline mt-4">Loan</CardTitle>
+                <CardTitle className="font-headline mt-4">Compulsory Deposit</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …</p>
+                <p className="text-muted-foreground">A mandatory saving plan for members to foster thrift.</p>
               </CardContent>
                <CardFooter className="pt-0">
                 <Button asChild variant="outline" className="w-full">
@@ -192,10 +192,10 @@ export default function Home() {
       {/* Join Us CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8">अब ज्यादा होगी बचत , जब मिलेगा ज्यादा Return of Investment.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8">Join Our Growing Family</h2>
           <Link href="/join">
             <Button size="lg" variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              <UserPlus className="mr-2 h-5 w-5" /> Become a member
+              <UserPlus className="mr-2 h-5 w-5" /> Join Us Today
             </Button>
           </Link>
         </div>
