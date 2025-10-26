@@ -39,17 +39,6 @@ export default function AboutPage() {
             <p className="text-muted-foreground mb-6">
               आज हम 11 वर्षो के अनुभव के साथ अपने 30,000+ के परिवार का निर्माण कर चुके हैं जहाँ पर सभी एक दूसरे के सहयोग से विकास के लिए तत्पर हैं। 11 वर्षो की यात्रा आसान नहीं थी और शायद आगे भी न हो लेकिन में एक बात जानता हूँ की जब तक आप लोगो का साथ मेरे साथ हैं, हम सभी लोग विकास करते रहेंगे।
             </p>
-             <Card className="bg-secondary/50 border-primary/20">
-                <CardContent className="pt-6">
-                    <div className="flex items-start gap-4">
-                        <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                        <div>
-                            <p className="font-semibold">Registration No: <span className="font-normal">10358/Sec-3/TC/2015</span></p>
-                            <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
-                        </div>
-                    </div>
-                </CardContent>
-             </Card>
           </div>
         </div>
 
@@ -82,6 +71,22 @@ export default function AboutPage() {
                         <CardTitle className="font-headline text-3xl">24/7</CardTitle>
                         <p className="text-muted-foreground">Team Support</p>
                     </CardHeader>
+                </Card>
+            </div>
+            <div className="mt-16 max-w-2xl mx-auto">
+                <Card className="bg-secondary/50 border-primary/20">
+                    <CardHeader>
+                        <CardTitle className="text-2xl font-headline">Registration Certificate</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="flex items-start gap-4">
+                            <FileText className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                            <div>
+                                <p className="font-semibold">Registration No: <span className="font-normal">10358/Sec-3/TC/2015</span></p>
+                                <p className="font-semibold">Established: <span className="font-normal">March 13, 2015</span></p>
+                            </div>
+                        </div>
+                    </CardContent>
                 </Card>
             </div>
         </div>
