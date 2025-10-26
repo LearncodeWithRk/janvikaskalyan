@@ -8,37 +8,57 @@ import { ArrowRight, Users, PiggyBank, Handshake, Landmark, Phone, Mail, ShieldC
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export default function Home() {
-  const heroImage = getImage('cooperative-meeting');
+  const heroImages = [
+    getImage('cooperative-meeting'),
+    getImage('gallery3'),
+    getImage('gallery4'),
+  ].filter(Boolean);
+  
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative w-full h-[80vh] bg-primary/10">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            data-ai-hint={heroImage.imageHint}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-            Your Personal Bank
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mb-8">
-            Empowering over 30,000+ members with savings, deposits, and easy loans.
-          </p>
-          <Link href="/join">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Become a Member <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
+        <Carousel
+          opts={{ loop: true }}
+          className="w-full h-full"
+        >
+          <CarouselContent>
+            {heroImages.map((heroImage, index) => (
+              <CarouselItem key={index}>
+                <div className="relative w-full h-[80vh]">
+                  {heroImage && (
+                    <Image
+                      src={heroImage.imageUrl}
+                      alt={heroImage.description}
+                      data-ai-hint={heroImage.imageHint}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black/40" />
+                  <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center text-white">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
+                      {index === 0 ? "Your Personal Bank" : index === 1 ? "Financial Growth, Together" : "A Community of Trust"}
+                    </h1>
+                    <p className="text-lg md:text-xl max-w-3xl mb-8">
+                      Empowering over 30,000+ members with savings, deposits, and easy loans.
+                    </p>
+                    <Link href="/join">
+                      <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                        Become a Member <ArrowRight className="ml-2 h-5 w-5" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-none" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 border-none" />
+        </Carousel>
       </section>
 
       {/* About Us Snippet Section */}
