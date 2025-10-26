@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FileText, Users, TrendingUp, Clock, Shield, Handshake } from 'lucide-react';
+import { FileText, Users, TrendingUp, Clock } from 'lucide-react';
 import { getImage } from '@/lib/placeholder-images';
 
 export default function AboutPage() {
@@ -51,15 +51,6 @@ export default function AboutPage() {
                 </CardContent>
              </Card>
           </div>
-        </div>
-
-        <div className="my-16 md:my-24 bg-card p-8 md:p-12 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-bold font-headline text-center mb-8">अध्यक्ष के विचार (Message from the Chairman)</h2>
-          <blockquote className="text-center text-muted-foreground italic text-lg max-w-3xl mx-auto">
-            <p>"हम सभी लोग अपने घर से दूर एक दूसरे शहर में रह रहे हैं, जहाँ हम अपने बच्चो के लिए बेहतर भविष्य की तलाश कर रहे हैं। लेकिन इन सभी अवसरों को हासिल करने के लिए हमें अपनों कें साथ की आवश्कता होती हैं, लेकिन इस अनजान शहर में आर्थिक , सामाजिक साथ कहीं खो सा गया हैं, और जब जब मेने यह सोचा तब मुझे सभी के जीवन में अपनों की कमी और आर्थिक तंगी का एहसास हुआ जिसने मुझे झिंझोर दिया और संस्था की नींव रखने के लिए मजबूर कर दिया।"</p>
-            <p className="mt-4">"आज हम 11 वर्षो के अनुभव के साथ अपने 30,000+ के परिवार का निर्माण कर चुके हैं जहाँ पर सभी एक दूसरे के सहयोग से विकास के लिए तत्पर हैं। 11 वर्षो की यात्रा आसान नहीं थी और शायद आगे भी न हो लेकिन में एक बात जानता हूँ की जब तक आप लोगो का साथ मेरे साथ हैं, हम सभी लोग विकास करते रहेंगे।"</p>
-          </blockquote>
-          <p className="text-center font-bold font-headline mt-6 text-xl">विकास तिवारी (Vikas Tiwari)</p>
         </div>
 
         <div className="my-16 md:my-24 text-center">
