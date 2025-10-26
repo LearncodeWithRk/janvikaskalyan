@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { getImage, ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowRight, Users, PiggyBank, Landmark, UserPlus } from 'lucide-react';
+import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useRef } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
@@ -178,8 +178,24 @@ export default function HomePage() {
     { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },
   ];
 
-  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
-  const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
+  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const handleNextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex + 1) % galleryImages.length));
+    }
+  };
+
+  const handlePrevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex((prevIndex) => (prevIndex === null ? 0 : (prevIndex - 1 + galleryImages.length) % galleryImages.length));
+    }
+  };
+
+  const selectedImage = selectedImageIndex !== null ? galleryImages[selectedImageIndex] : null;
 
 
   return (
@@ -262,8 +278,7 @@ export default function HomePage() {
           </div>
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
             {galleryImages.map((image, index) => (
-              image && 
-              <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid cursor-pointer" onClick={() => setSelectedImage(image)}>
+              <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid cursor-pointer" onClick={() => setSelectedImageIndex(index)}>
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
@@ -294,18 +309,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-        <DialogContent className="max-w-4xl p-0">
+      <Dialog open={selectedImageIndex !== null} onOpenChange={() => setSelectedImageIndex(null)}>
+        <DialogContent className="max-w-4xl p-0 bg-transparent border-0 shadow-none">
           {selectedImage && (
             <>
               <DialogTitle className="sr-only">{selectedImage.description}</DialogTitle>
-              <Image
-                src={selectedImage.imageUrl}
-                alt={selectedImage.description}
-                width={1200}
-                height={800}
-                className="rounded-lg object-contain"
-              />
+              <div className="relative">
+                <Image
+                  src={selectedImage.imageUrl}
+                  alt={selectedImage.description}
+                  width={1200}
+                  height={800}
+                  className="rounded-lg object-contain w-full h-auto max-h-[80vh]"
+                />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={handlePrevImage}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white/50 hover:bg-white/80 text-black rounded-full h-10 w-10"
+                >
+                  <ChevronLeft className="h-6 w-6" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={handleNextImage}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white/50 hover:bg-white/80 text-black rounded-full h-10 w-10"
+                >
+                  <ChevronRight className="h-6 w-6" />
+                </Button>
+              </div>
             </>
           )}
         </DialogContent>
@@ -313,7 +346,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-    
-
-    
