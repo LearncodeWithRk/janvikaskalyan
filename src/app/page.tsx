@@ -86,7 +86,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">A Legacy of Trust &amp; Growth</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About us</h2>
                     <p className="text-muted-foreground mb-6">
                         Established on March 13, 2015, Jan Vikas Kalyan Co-operative Society is registered under the DCS Act 2013 (Reg. No. 10358/3TC/2015). We are committed to the financial empowerment of our members through a culture of savings and mutual support.
                     </p>
