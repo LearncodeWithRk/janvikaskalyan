@@ -4,9 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { getImage } from '@/lib/placeholder-images';
-import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, CreditCard, Smartphone, Home, Car } from 'lucide-react';
+import { getImage, ImagePlaceholder } from '@/lib/placeholder-images';
+import { ArrowRight, Users, PiggyBank, Landmark, UserPlus } from 'lucide-react';
 import React, { useState, useEffect, useRef } from 'react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const heroSlides = [
   {
@@ -172,11 +173,13 @@ export default function HomePage() {
   const products = [
     { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/plans#recurring-deposit" },
     { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/fixed-deposit" },
-    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: Home, href: "/plans#saving-deposit" },
+    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: Landmark, href: "/plans#saving-deposit" },
     { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },
   ];
 
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id));
+  const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
+
 
   return (
     <div className="flex flex-col bg-background">
@@ -259,7 +262,7 @@ export default function HomePage() {
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
             {galleryImages.map((image, index) => (
               image && 
-              <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid">
+              <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid cursor-pointer" onClick={() => setSelectedImage(image)}>
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
@@ -290,6 +293,21 @@ export default function HomePage() {
         </div>
       </section>
 
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-4xl p-0">
+          {selectedImage && (
+            <Image
+              src={selectedImage.imageUrl}
+              alt={selectedImage.description}
+              width={1200}
+              height={800}
+              className="rounded-lg object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
+
+    
