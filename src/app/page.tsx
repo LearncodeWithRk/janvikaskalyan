@@ -172,10 +172,10 @@ function HeroSlider() {
 
 export default function HomePage() {
   const products = [
-    { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/recurring-deposit" },
-    { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/fixed-deposit" },
-    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: HandCoins, href: "/saving-deposit" },
-    { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },
+    { title: "Recurring Deposit", description: "Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …", icon: Users, href: "/recurring-deposit" },
+    { title: "Fixed Deposit", description: "Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…", icon: PiggyBank, href: "/fixed-deposit" },
+    { title: "Saving Account", description: "It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…", icon: HandCoins, href: "/saving-deposit" },
+    { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
   ];
 
   const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
