@@ -53,7 +53,7 @@ const plans = [
       "Contributes to the society's collective strength.",
       "Exclusive for Jan Vikas Kalyan members.",
     ],
-    href: "/contact"
+    href: "/compulsory-deposit"
   },
 ];
 

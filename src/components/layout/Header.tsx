@@ -30,7 +30,7 @@ const navLinks = [
       { href: "/fixed-deposit", label: "Fixed Deposit" },
       { href: "/recurring-deposit", label: "Recurring Deposit" },
       { href: "/saving-deposit", label: "Saving Deposit" },
-      { href: "/plans#compulsory-deposit", label: "Compulsory Deposit" },
+      { href: "/compulsory-deposit", label: "Compulsory Deposit" },
     ]
   },
   { 
@@ -50,7 +50,7 @@ export function Header() {
   const pathname = usePathname();
 
   const isPlansSubmenuActive = (pathname: string) => {
-    return pathname.startsWith('/plans') || pathname === '/fixed-deposit' || pathname === '/recurring-deposit' || pathname === '/saving-deposit';
+    return pathname.startsWith('/plans') || pathname === '/fixed-deposit' || pathname === '/recurring-deposit' || pathname === '/saving-deposit' || pathname === '/compulsory-deposit';
   };
 
   const NavLinks = ({ className, inSheet = false }: { className?: string; inSheet?: boolean }) => (
