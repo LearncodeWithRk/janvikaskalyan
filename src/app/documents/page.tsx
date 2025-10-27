@@ -18,8 +18,8 @@ const documents = [
   {
     title: "Society Bye-Laws",
     description: "The official rules and regulations governing the society.",
-    fileUrl: "/placeholder.pdf",
-    fileName: "JVK_Bye_Laws.pdf",
+    fileUrl: "https://janvikaskalyan.com/wp-content/uploads/2020/11/JAN-VIKAS-KALYAN-CO-OPERATIVE-THRIFT-CREDIT-SOCIETY-LTD.pdf",
+    fileName: "JAN-VIKAS-KALYAN-CO-OPERATIVE-THRIFT-CREDIT-SOCIETY-LTD.pdf",
   },
   {
     title: "Annual Report 2023",
@@ -56,7 +56,7 @@ export default function DocumentsPage() {
                   <TableCell className="text-muted-foreground hidden md:table-cell">{doc.description}</TableCell>
                   <TableCell className="text-right">
                     <Button asChild variant="ghost" size="icon">
-                      <a href={doc.fileUrl} download={doc.fileName}>
+                      <a href={doc.fileUrl} download={doc.fileName} target="_blank" rel="noopener noreferrer">
                         <Download className="h-5 w-5" />
                         <span className="sr-only">Download {doc.title}</span>
                       </a>
