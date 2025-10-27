@@ -15,9 +15,6 @@ export default function CompulsoryDepositPage() {
       <section className="py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Compulsory Deposit</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A unique savings instrument exclusive to our members, designed to instill financial discipline and build a secure future.
-          </p>
         </div>
       </section>
 
