@@ -20,7 +20,7 @@ export default function FixedDepositPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-primary/10">
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Fixed Deposit (FD)</h1>
         </div>
