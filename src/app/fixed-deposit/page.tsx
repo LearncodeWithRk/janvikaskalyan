@@ -86,7 +86,7 @@ export default function FixedDepositPage() {
                         <CardTitle className="text-lg">ELIGIBILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">The applicant must be a member of the Society. For Society membership related information <Link href="/join" className="text-primary underline">Click Here</Link>.</p>
+                        <p className="text-muted-foreground">The applicant must be a member of the Society. For Society membership related information <Link href="/join" className="text-primary underline"></Link>.</p>
                     </CardContent>
                 </Card>
                  <Card>
