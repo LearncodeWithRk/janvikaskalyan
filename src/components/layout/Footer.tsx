@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { Landmark } from 'lucide-react';
+import { Facebook, Youtube } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -30,7 +30,17 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            {/* Keeping this empty for alignment, can be used for contact info or social media links later */}
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <div className="flex justify-center md:justify-start space-x-4">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Facebook className="h-6 w-6" />
+                    <span className="sr-only">Facebook</span>
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Youtube className="h-6 w-6" />
+                    <span className="sr-only">YouTube</span>
+                </Link>
+            </div>
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
