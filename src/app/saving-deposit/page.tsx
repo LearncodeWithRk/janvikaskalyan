@@ -114,7 +114,7 @@ export default function SavingDepositPage() {
                         </li>
                         <li className="flex items-start">
                              <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>For membership information, please <Link href="/join" className="text-primary underline hover:text-primary/80">click here</Link>.</span>
+                            <span>For membership information, please <Link href="/join" className="text-primary underline hover:text-primary/80">visit our membership page</Link>.</span>
                         </li>
                     </ul>
                 </CardContent>
