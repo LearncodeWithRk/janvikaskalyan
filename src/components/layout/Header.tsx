@@ -2,8 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Landmark, ChevronDown } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { Menu, Landmark } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -12,101 +11,9 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { cn } from "@/lib/utils";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
-  { 
-    href: "/plans", 
-    label: "Our Plans",
-    submenu: [
-      { href: "/fixed-deposit", label: "Fixed Deposit" },
-      { href: "/recurring-deposit", label: "Recurring Deposit" },
-      { href: "/saving-deposit", label: "Saving Deposit" },
-      { href: "/compulsory-deposit", label: "Compulsory Deposit" },
-    ]
-  },
-  { 
-    href: "/loans", 
-    label: "Loans",
-    submenu: [
-      { href: "/personal-loan", label: "Personal/Regular Loan" },
-      { href: "/emergency-loan", label: "Emergency Loan" },
-      { href: "/loan-against-deposit", label: "Loan Against Deposit" },
-    ]
-  },
-  { href: "/join", label: "Membership" },
-  { href: "/contact", label: "Contact Us" },
-];
+import { NavLinks, MobileNavLinks } from "./NavLinks";
 
 export function Header() {
-  const pathname = usePathname();
-
-  const isPlansSubmenuActive = (pathname: string) => {
-    return pathname.startsWith('/plans') || pathname === '/fixed-deposit' || pathname === '/recurring-deposit' || pathname === '/saving-deposit' || pathname === '/compulsory-deposit';
-  };
-
-  const isLoansSubmenuActive = (pathname: string) => {
-    return pathname.startsWith('/loans') || pathname === '/personal-loan' || pathname === '/emergency-loan' || pathname === '/loan-against-deposit';
-  }
-
-  const NavLinks = ({ className, inSheet = false }: { className?: string; inSheet?: boolean }) => (
-    <nav className={cn("flex items-center gap-4 lg:gap-6", className)}>
-      {navLinks.map(({ href, label, submenu }) => (
-        submenu ? (
-          <DropdownMenu key={href}>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="ghost"
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary-foreground focus:outline-none focus:ring-0 p-0 h-auto",
-                  "data-[state=open]:text-primary-foreground",
-                   isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
-                   isLoansSubmenuActive(pathname) && href === '/loans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
-                   pathname.startsWith(href) && href !== '/plans' && href !== '/loans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
-                   inSheet && "text-lg justify-start w-full",
-                   inSheet && (isPlansSubmenuActive(pathname) && href === '/plans') ? "text-primary" : inSheet ? "text-muted-foreground" : "",
-                   inSheet && (isLoansSubmenuActive(pathname) && href === '/loans') ? "text-primary" : inSheet ? "text-muted-foreground" : "",
-                   inSheet && (pathname.startsWith(href) && href !== '/plans' && href !== '/loans') ? "text-primary" : inSheet ? "text-muted-foreground" : ""
-                )}
-              >
-                {label}
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start">
-              {submenu.map(item => (
-                <DropdownMenuItem key={item.href} asChild>
-                  <Link href={item.href}>{item.label}</Link>
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-        ) : (
-          <Link
-            key={href}
-            href={href}
-            className={cn(
-              "text-sm font-medium transition-colors hover:text-primary-foreground",
-               pathname === href ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
-               inSheet && "text-lg",
-               inSheet && pathname === href ? "text-primary" : inSheet ? "text-muted-foreground" : ""
-            )}
-          >
-            {label}
-          </Link>
-        )
-      ))}
-    </nav>
-  );
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-primary shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
@@ -128,52 +35,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="flex flex-col gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2">
-                  <Landmark className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Jan Vikas Kalyan</span>
-                </Link>
-                <nav className="grid gap-4">
-                  {navLinks.map(({ href, label, submenu }) => (
-                     submenu ? (
-                      <div key={href}>
-                        <h3 className={cn(
-                           "text-lg font-medium transition-colors hover:text-primary flex items-center",
-                           isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary" : "text-muted-foreground",
-                           isLoansSubmenuActive(pathname) && href === '/loans' ? "text-primary" : "text-muted-foreground",
-                           pathname.startsWith(href) && href !== '/plans' && href !== '/loans' ? "text-primary" : "text-muted-foreground"
-                         )}>
-                          {label}
-                        </h3>
-                        <div className="flex flex-col pl-4 mt-2 gap-2">
-                          {submenu.map(item => (
-                            <SheetClose key={item.href} asChild>
-                              <Link
-                                href={item.href}
-                                className="text-muted-foreground hover:text-primary"
-                              >
-                                {item.label}
-                              </Link>
-                            </SheetClose>
-                          ))}
-                        </div>
-                      </div>
-                     ) : (
-                      <SheetClose key={href} asChild>
-                        <Link
-                          href={href}
-                          className={cn(
-                            "text-lg font-medium transition-colors hover:text-primary",
-                            pathname === href ? "text-primary" : "text-muted-foreground"
-                          )}
-                        >
-                          {label}
-                        </Link>
-                      </SheetClose>
-                     )
-                  ))}
-                </nav>
-              </div>
+                <MobileNavLinks />
             </SheetContent>
           </Sheet>
         </div>
