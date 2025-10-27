@@ -66,60 +66,60 @@ export default function JoinPage() {
               <AccordionItem value="item-1">
                 <AccordionTrigger>
                     <div className="flex items-center gap-2">
-                        <HelpCircle className="h-5 w-5 text-primary" /> Who can be a member?
+                        <HelpCircle className="h-5 w-5 text-primary" /> Who can be a member of the society?
                     </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
-                  Any person who has attained the age of 18 years, is capable of entering a valid contract, a member of a Hindu undivided family, a business, a company registered under the Companies Act, a partnership firm, a limited liability partnership firm, any trust, or institution can become a member of the Society.
+                  Any person who has attained the age of 18 years, is capable of entering a valid contract, member of Hindu undivided family, Business, a company registered under companies Act, a partnership firm, a limited liability partnership firm, any trust, Institutions etc. can become a member of the Society.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>
                     <div className="flex items-center gap-2">
-                         <UserPlus className="h-5 w-5 text-primary" /> How to join the society?
+                         <UserPlus className="h-5 w-5 text-primary" /> How can one join the society?
                     </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="mb-4 text-muted-foreground">The application for membership shall be submitted by the applicant at any of the branches of the society, in the prescribed form with the following KYC documents:</p>
+                  <p className="mb-4 text-muted-foreground">The application for membership of the society shall be submitted by the applicant at any of the branches of the society, in the prescribed form and KYC documents such as:</p>
                   <ul className="space-y-2 text-muted-foreground list-disc pl-5">
-                    <li><strong>ID Proof:</strong> Voter ID card, Aadhar Card, PAN Card, etc.</li>
-                    <li><strong>Address Proof:</strong> Electricity/Water Bill is compulsory.</li>
-                    <li><strong>Rent Agreement:</strong> Required for tenants, along with the landlord's Electricity/Water bill.</li>
-                    <li><strong>Photos:</strong> 2 latest passport-size photographs.</li>
+                    <li><strong>Id Proof:</strong> Any like Voter Id card, Aadhar Card, Pan Card etc.</li>
+                    <li><strong>Address Proof:</strong> Electricity/Water Bill, Compulsory.</li>
+                    <li><strong>Rent Agreement:</strong> In case of tenant. Electricity/Water bill of Landlord compulsory.</li>
+                    <li><strong>Photos:</strong> 2 latest passport size Photos.</li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
                      <div className="flex items-center gap-2">
-                        <Award className="h-5 w-5 text-primary" /> What are the benefits of joining?
+                        <Award className="h-5 w-5 text-primary" /> Benefits of joining JAN VIKAS KALYAN?
                     </div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>Offers higher interest rates on deposits compared to banks.</span>
+                          <span>Offers higher Interest rates on deposits. (More than BANKS)</span>
                       </li>
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>No TDS is deducted on the interest earned on deposits.</span>
+                          <span>No TDS is deducted on the Interest earned on the deposits.</span>
                       </li>
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>Access to a wide range of savings and deposit schemes.</span>
+                          <span>Wide ranges of Schemes.</span>
                       </li>
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>Hassle-free loan products with a simple application process.</span>
+                          <span>Hassle Free Loan Products.</span>
                       </li>
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>Full transparency in all operations and dealings.</span>
+                          <span>Full transparency.</span>
                       </li>
                       <li className="flex items-start">
                           <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                          <span>Professional, cooperative, and friendly staff to assist you.</span>
+                          <span>We are truly professional and our staffs are also cooperative and friendly.</span>
                       </li>
                   </ul>
                 </AccordionContent>
@@ -130,7 +130,7 @@ export default function JoinPage() {
                     <div className="flex items-start gap-4">
                         <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                         <div>
-                            <p className="font-semibold text-sm">The right to accept/reject membership application/s are reserved with the Management of the society.</p>
+                            <p className="font-semibold text-sm">The right to accept/reject Membership application/s are reserved with the Management of the society.</p>
                         </div>
                     </div>
                 </CardContent>
