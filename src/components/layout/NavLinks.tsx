@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { SheetClose } from "@/components/ui/sheet";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -100,50 +101,54 @@ export function NavLinks() {
 export function MobileNavLinks() {
     const pathname = usePathname();
     return (
-        <div className="flex flex-col gap-6 p-6">
-            <Link href="/" className="flex items-center gap-2">
-                <Landmark className="h-6 w-6 text-primary" />
-                <span className="font-bold">JVK</span>
-            </Link>
-            <nav className="grid gap-4">
+        <div className="flex flex-col h-full">
+            <div className="p-6">
+                <Link href="/" className="flex items-center gap-2">
+                    <Landmark className="h-6 w-6 text-primary" />
+                    <span className="font-bold">JVK</span>
+                </Link>
+            </div>
+            <nav className="flex-grow px-4">
+                <Accordion type="multiple" className="w-full">
                 {navLinks.map(({ href, label, submenu }) => (
                     submenu ? (
-                    <div key={href}>
-                        <h3 className={cn(
-                           "text-lg font-medium transition-colors hover:text-primary flex items-center",
-                           isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary" : "text-muted-foreground",
-                           isLoansSubmenuActive(pathname) && href === '/loans' ? "text-primary" : "text-muted-foreground",
-                           pathname.startsWith(href) && href !== '/plans' && href !== '/loans' ? "text-primary" : "text-muted-foreground"
-                         )}>
-                          {label}
-                        </h3>
-                        <div className="flex flex-col pl-4 mt-2 gap-2">
-                          {submenu.map(item => (
-                            <SheetClose key={item.href} asChild>
-                              <Link
-                                href={item.href}
-                                className="text-muted-foreground hover:text-primary"
-                              >
-                                {item.label}
-                              </Link>
-                            </SheetClose>
-                          ))}
-                        </div>
-                      </div>
-                     ) : (
-                      <SheetClose key={href} asChild>
+                    <AccordionItem value={label} key={label} className="border-b-0">
+                        <AccordionTrigger className="py-3 text-lg font-medium text-muted-foreground hover:text-primary hover:no-underline [&[data-state=open]>svg]:text-primary">
+                            {label}
+                        </AccordionTrigger>
+                        <AccordionContent className="pl-4">
+                            <div className="flex flex-col gap-2">
+                                {submenu.map(item => (
+                                <SheetClose key={item.href} asChild>
+                                    <Link
+                                    href={item.href}
+                                    className={cn(
+                                        "text-muted-foreground hover:text-primary",
+                                        pathname === item.href && "text-primary font-semibold"
+                                    )}
+                                    >
+                                    {item.label}
+                                    </Link>
+                                </SheetClose>
+                                ))}
+                            </div>
+                        </AccordionContent>
+                    </AccordionItem>
+                    ) : (
+                    <SheetClose key={href} asChild>
                         <Link
-                          href={href}
-                          className={cn(
-                            "text-lg font-medium transition-colors hover:text-primary",
+                        href={href}
+                        className={cn(
+                            "block py-3 text-lg font-medium transition-colors hover:text-primary",
                             pathname === href ? "text-primary" : "text-muted-foreground"
-                          )}
+                        )}
                         >
-                          {label}
+                        {label}
                         </Link>
-                      </SheetClose>
-                     )
+                    </SheetClose>
+                    )
                 ))}
+                </Accordion>
             </nav>
         </div>
     )
