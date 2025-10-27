@@ -32,7 +32,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="https://www.facebook.com/people/Jan-Vikas-Kalyan-Co-operative-Thrift-Credit-Society-Limited/100079647652828/" className="text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                     <Facebook className="h-6 w-6" />
                     <span className="sr-only">Facebook</span>
                 </Link>
