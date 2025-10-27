@@ -19,7 +19,7 @@ export default function SavingDepositPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="md:my-16">
+        <div className="my-8">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Saving Account : Return of Investment @ 6% per annum</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Card>
