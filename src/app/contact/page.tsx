@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -41,16 +42,21 @@ export default function ContactPage() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    const mailtoLink = `mailto:Janvikaskalyan200@gmail.com?subject=${encodeURIComponent(
+      values.subject
+    )}&body=${encodeURIComponent(
+      `Name: ${values.name}\nEmail: ${values.email}\n\nMessage:\n${values.message}`
+    )}`;
     
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    // This will open the user's default email client
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
+      title: "Redirecting to your email client...",
+      description: "Please send the email from your mail application.",
     });
     
-    form.reset();
+    // We don't reset the form so the user can copy the content if needed
   }
 
   return (
@@ -119,7 +125,7 @@ export default function ContactPage() {
                     )}
                   />
                   <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={form.formState.isSubmitting}>
-                    {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+                    {form.formState.isSubmitting ? "Redirecting..." : "Send Message"}
                   </Button>
                 </form>
               </Form>
