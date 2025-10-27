@@ -21,7 +21,6 @@ export default function SavingDepositPage() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h2 className="text-3xl font-bold font-headline mb-4">Liquidity and Growth, Hand in Hand</h2>
             <p className="text-muted-foreground mb-6">
               Our Saving Deposit account is designed for your day-to-day financial needs. It offers complete liquidity, allowing you to deposit and withdraw funds as needed, while also earning you a competitive interest rate on your balance. It's the perfect way to keep your surplus cash safe and productive.
             </p>
