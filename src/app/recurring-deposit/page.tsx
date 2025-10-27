@@ -29,8 +29,7 @@ export default function RecurringDepositPage() {
 
       <div className="container mx-auto px-4 py-16 md:py-24">
         
-        <div className="my-16 md:my-24">
-          <h2 className="text-3xl font-bold font-headline text-center mb-12">RD Maturity Amount Chart</h2>
+        <div className="my-12">
           <Card className="max-w-6xl mx-auto shadow-lg">
             <Table>
               <TableHeader>
