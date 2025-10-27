@@ -290,6 +290,14 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+           <div className="text-center mt-12">
+              <Button asChild variant="outline">
+                <Link href="/gallery">
+                  View All
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
         </div>
       </section>
       
