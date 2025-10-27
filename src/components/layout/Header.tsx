@@ -39,7 +39,7 @@ const navLinks = [
     submenu: [
       { href: "/personal-loan", label: "Personal/Regular Loan" },
       { href: "/emergency-loan", label: "Emergency Loan" },
-      { href: "/loans#loan-against-deposit", label: "Loan Against Deposit" },
+      { href: "/loan-against-deposit", label: "Loan Against Deposit" },
     ]
   },
   { href: "/join", label: "Membership" },
@@ -54,7 +54,7 @@ export function Header() {
   };
 
   const isLoansSubmenuActive = (pathname: string) => {
-    return pathname.startsWith('/loans') || pathname === '/personal-loan' || pathname === '/emergency-loan';
+    return pathname.startsWith('/loans') || pathname === '/personal-loan' || pathname === '/emergency-loan' || pathname === '/loan-against-deposit';
   }
 
   const NavLinks = ({ className, inSheet = false }: { className?: string; inSheet?: boolean }) => (

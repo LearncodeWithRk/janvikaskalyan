@@ -41,7 +41,7 @@ const loanTypes = [
       "Continue earning interest on your deposit.",
       "Quick and hassle-free disbursal.",
     ],
-    href: "/contact"
+    href: "/loan-against-deposit"
   },
 ];
 
@@ -86,7 +86,7 @@ export default function LoansPage() {
               </CardContent>
               <div className="p-6 pt-0">
                 <Button asChild className="w-full">
-                  <Link href={loan.href}>{loan.id === 'loan-against-deposit' ? 'Enquire Now' : 'Learn More'}</Link>
+                  <Link href={loan.href}>Learn More</Link>
                 </Button>
               </div>
             </Card>
