@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, Lock } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, Lock, User, CircleDollarSign, PiggyBank, Shield } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 
@@ -20,55 +20,51 @@ export default function CompulsoryDepositPage() {
 
       <div className="container mx-auto px-4 py-16 md:py-24">
         
-        <h2 className="text-3xl font-bold font-headline text-center mb-12">Compulsory Deposit : Return of Investment @ 9% per annum</h2>
         <div className="my-16 md:my-24">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Financial Discipline</CardTitle>
+            <h2 className="text-3xl font-bold font-headline text-center mb-12">Compulsory Deposit : Return of Investment @ 9% per annum</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <User className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">ELIGIBILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Instills a strong and regular saving habit, which is fundamental to financial health.</p>
+                        <ul className="space-y-2 text-muted-foreground">
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline">(Click Here)</Link>.</span></li>
+                        </ul>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Guaranteed Savings Pool</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <Shield className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">SPECIAL FEATURES</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Builds a guaranteed savings corpus over time, creating a reliable financial cushion.</p>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> No TDS is applicable on the interest earned on deposits.</li>
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Offers higher interest rates.</li>
+                             <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Passbook will be provided.</li>
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Any time deposit and withdrawal.</li>
+                        </ul>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Membership Benefit</CardTitle>
+                 <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">An exclusive benefit that directly contributes to the member's financial security.</p>
+                        <p className="text-muted-foreground">Rs. 100/-</p>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Collective Strength</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <PiggyBank className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">NOMINATION FACILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Your savings contribute to the society's financial strength, helping fellow members.</p>
-                    </CardContent>
-                </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Loan Eligibility</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">A consistent compulsory deposit record can improve eligibility for future loans.</p>
-                    </CardContent>
-                </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Future Security</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Provides a foundational safety net, ensuring peace of mind for you and your family.</p>
+                        <p className="text-muted-foreground">Nomination Facility Available.</p>
                     </CardContent>
                 </Card>
             </div>
