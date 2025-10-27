@@ -41,7 +41,7 @@ const plans = [
       "No limit on the number of deposits.",
       "A safe place for your surplus cash.",
     ],
-    href: "/contact"
+    href: "/saving-deposit"
   },
   {
     id: "compulsory-deposit",

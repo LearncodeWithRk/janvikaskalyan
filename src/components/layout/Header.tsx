@@ -29,7 +29,7 @@ const navLinks = [
     submenu: [
       { href: "/fixed-deposit", label: "Fixed Deposit" },
       { href: "/recurring-deposit", label: "Recurring Deposit" },
-      { href: "/plans#saving-deposit", label: "Saving Deposit" },
+      { href: "/saving-deposit", label: "Saving Deposit" },
       { href: "/plans#compulsory-deposit", label: "Compulsory Deposit" },
     ]
   },
@@ -49,6 +49,10 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname();
 
+  const isPlansSubmenuActive = (pathname: string) => {
+    return pathname.startsWith('/plans') || pathname === '/fixed-deposit' || pathname === '/recurring-deposit' || pathname === '/saving-deposit';
+  };
+
   const NavLinks = ({ className, inSheet = false }: { className?: string; inSheet?: boolean }) => (
     <nav className={cn("flex items-center gap-4 lg:gap-6", className)}>
       {navLinks.map(({ href, label, submenu }) => (
@@ -60,9 +64,11 @@ export function Header() {
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-0 p-0 h-auto",
                   "data-[state=open]:text-primary",
-                   pathname.startsWith(href) || (href === '/plans' && (pathname === '/fixed-deposit' || pathname === '/recurring-deposit')) ? "text-primary font-bold" : "text-foreground/80",
+                   isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary font-bold" : "text-foreground/80",
+                   pathname.startsWith(href) && href !== '/plans' ? "text-primary font-bold" : "text-foreground/80",
                    inSheet && "text-lg justify-start w-full",
-                   inSheet && (pathname.startsWith(href) || (href === '/plans' && (pathname === '/fixed-deposit' || pathname === '/recurring-deposit'))) ? "text-primary" : inSheet ? "text-muted-foreground" : ""
+                   inSheet && (isPlansSubmenuActive(pathname) && href === '/plans') ? "text-primary" : inSheet ? "text-muted-foreground" : "",
+                   inSheet && (pathname.startsWith(href) && href !== '/plans') ? "text-primary" : inSheet ? "text-muted-foreground" : ""
                 )}
               >
                 {label}
@@ -127,7 +133,8 @@ export function Header() {
                       <div key={href}>
                         <h3 className={cn(
                            "text-lg font-medium transition-colors hover:text-primary flex items-center",
-                           pathname.startsWith(href) || (href === '/plans' && (pathname === '/fixed-deposit' || pathname === '/recurring-deposit')) ? "text-primary" : "text-muted-foreground"
+                           isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary" : "text-muted-foreground",
+                           pathname.startsWith(href) && href !== '/plans' ? "text-primary" : "text-muted-foreground"
                          )}>
                           {label}
                         </h3>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { getImage, ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, ChevronLeft, ChevronRight, HandCoins } from 'lucide-react';
 import React, { useState, useEffect, useRef } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
@@ -174,7 +174,7 @@ export default function HomePage() {
   const products = [
     { title: "Recurring Deposit", description: "Build a corpus with small, regular monthly investments.", icon: Users, href: "/recurring-deposit" },
     { title: "Fixed Deposit", description: "Grow your savings with attractive, fixed interest rates.", icon: PiggyBank, href: "/fixed-deposit" },
-    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: Landmark, href: "/plans#saving-deposit" },
+    { title: "Saving Account", description: "Flexible savings account for your daily needs with interest.", icon: HandCoins, href: "/saving-deposit" },
     { title: "Loan", description: "Member-centric loan facilities to cater to your diverse financial needs.", icon: Landmark, href: "/loans" },
   ];
 
