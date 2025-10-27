@@ -127,36 +127,58 @@ export default function ContactPage() {
           </Card>
         </div>
 
-        <div className="md:col-span-2 space-y-6">
+        <div className="md:col-span-2 space-y-8">
           <h3 className="text-2xl font-semibold font-headline">Contact Information</h3>
-          <div className="flex items-start gap-4">
-            <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-              <MapPin className="h-6 w-6 text-primary" />
+          
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
+                <Mail className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-semibold">Email</h4>
+                <p className="text-muted-foreground">Janvikaskalyan200@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold">Our Office</h4>
-              <p className="text-muted-foreground">Location in Delhi, India</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-              <Mail className="h-6 w-6 text-primary" />
-            </div>
-            <div>
-              <h4 className="font-semibold">Email Us</h4>
-              <p className="text-muted-foreground">contact@janvikaskalyan.com</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
-              <Phone className="h-6 w-6 text-primary" />
-            </div>
-            <div>
-              <h4 className="font-semibold">Call Us</h4>
-              <p className="text-muted-foreground">+91 9625380067</p>
-              <p className="text-muted-foreground">+91 9205437299</p>
+            <div className="flex items-start gap-4">
+              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
+                <Phone className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-semibold">Mobile No</h4>
+                <p className="text-muted-foreground">+91 9625380067</p>
+                <p className="text-muted-foreground">+91 9205437299</p>
+              </div>
             </div>
           </div>
+
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+                <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
+                <MapPin className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                <h4 className="font-semibold">Working Offices</h4>
+                <div className="text-muted-foreground space-y-2 mt-1">
+                    <p>B6 , First Floor , Main Road , Aali Extension , New Delhi – 110076</p>
+                    <p>30 No.,DSIDC Shed, Scheme 3 , Near Dharma Kanta , Okhla Phase -II , 110020</p>
+                    <p>A-29, Gali No.-1, Jaitpur Extn., Part-2, Near NTPC Ground, Badarpur, New Delhi-110044</p>
+                    <p>E-86A, Mangal Bazar Road, Sangam Vihar,New Delhi-80</p>
+                    <p>H.No. 1287, Phase-III, J.J. Colony, Madanpur Khadar, New Delhi-76</p>
+                </div>
+                </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="bg-primary/10 p-3 rounded-full flex-shrink-0">
+                <MapPin className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-semibold">Registered Office</h4>
+                <p className="text-muted-foreground">F-42 , Ground Floor , Bhim Colony , Aali Vihar , New Delhi – 110044</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
