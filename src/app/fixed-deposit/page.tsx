@@ -21,15 +21,10 @@ export default function FixedDepositPage() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <h2 className="text-3xl font-bold font-headline mb-4">Secure Your Future with Guaranteed Returns</h2>
-            <p className="text-muted-foreground mb-6">
-              A Fixed Deposit is a secure investment instrument where you deposit a lump sum amount for a fixed tenure, earning a guaranteed interest rate. It's an ideal choice for risk-averse investors who seek capital protection and predictable returns. At Jan Vikas Kalyan, we offer competitive interest rates to help your savings grow steadily.
+            <h2 className="text-3xl font-bold font-headline mb-4">अपनी राशि को मात्र 6 वर्ष 6 महीने में दोगुना करें</h2>
+            <p className="text-muted-foreground text-lg mb-6">
+              Note : Rate of Interest 12% Annual
             </p>
-            <Button asChild size="lg">
-              <Link href="/contact">
-                Apply Now <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
           </div>
           <div className="order-1 md:order-2">
             {fdImage && (
