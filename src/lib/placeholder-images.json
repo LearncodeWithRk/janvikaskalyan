@@ -49,6 +49,18 @@
       "imageHint": "financial workshop"
     },
     {
+      "id": "gallery7",
+      "description": "Members having a productive discussion at a table.",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGRpc2N1c3Npb258ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business discussion"
+    },
+    {
+      "id": "gallery8",
+      "description": "An educational seminar for the society members.",
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlZHVjYXRpb25hbCUyMHNlbWluYXJ8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "educational seminar"
+    },
+    {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
       "imageUrl": "https://images.unsplash.com/photo-1639755248628-6e54a8063a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",

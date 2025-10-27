@@ -178,7 +178,16 @@ export default function HomePage() {
     { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
   ];
 
-  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4', 'gallery5', 'gallery6'].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
+  const galleryImages = [
+    'gallery1', 
+    'gallery2', 
+    'gallery3', 
+    'gallery4', 
+    'gallery5', 
+    'gallery6',
+    'gallery7',
+    'gallery8'
+  ].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const handleNextImage = (e: React.MouseEvent) => {
@@ -277,7 +286,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold font-headline">Gallery</h2>
           </div>
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-            {galleryImages.map((image, index) => (
+            {galleryImages.slice(0, 8).map((image, index) => (
               <div key={index} className="overflow-hidden rounded-lg shadow-md break-inside-avoid cursor-pointer" onClick={() => setSelectedImageIndex(index)}>
                 <Image
                   src={image.imageUrl}
@@ -354,3 +363,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+    
