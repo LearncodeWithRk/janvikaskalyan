@@ -28,7 +28,7 @@ export default function FixedDepositPage() {
 
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-1 gap-12 items-center">
-          <div className="text-center">
+          <div className="text-left">
             <h2 className="text-3xl font-bold font-headline mb-4">अपनी राशि को मात्र 6 वर्ष 6 महीने में दोगुना करें</h2>
             <p className="text-muted-foreground text-lg mb-6">
               Note : Rate of Interest 12% Annual
@@ -76,7 +76,7 @@ export default function FixedDepositPage() {
                     <CardContent>
                         <ul className="space-y-2 text-muted-foreground">
                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society.</span></li>
-                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline">click here</Link>.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline" />.</span></li>
                         </ul>
                     </CardContent>
                 </Card>
