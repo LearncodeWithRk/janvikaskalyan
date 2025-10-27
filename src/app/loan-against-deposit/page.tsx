@@ -16,9 +16,6 @@ export default function LoanAgainstDepositPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Loan Against Deposit</h1>
-            <p className="text-lg text-muted-foreground">
-              Leverage your existing Fixed or Recurring Deposits to secure a loan. Get the liquidity you need without breaking your investment and continue earning interest.
-            </p>
           </div>
         </div>
       </section>
