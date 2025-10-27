@@ -83,14 +83,6 @@ export default function FixedDepositPage() {
                         <p className="text-muted-foreground">Nominate a beneficiary to receive the funds in your absence.</p>
                     </CardContent>
                 </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">No TDS</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">No TDS is deducted on the interest earned on deposits with us.</p>
-                    </CardContent>
-                </Card>
             </div>
         </div>
 
