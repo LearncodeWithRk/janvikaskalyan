@@ -5,6 +5,15 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, FileText, UserCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
+const maturityData = [
+    { deposit: "10,000", days90: "10,300", year1: "11,146", year2: "12,424", year3: "13,848", year6: "20,000" },
+    { deposit: "50,000", days90: "51,500", year1: "55,730", year2: "62,120", year3: "69,240", year6: "100,000" },
+    { deposit: "100,000", days90: "103,000", year1: "111,460", year2: "124,240", year3: "138,480", year6: "200,000" },
+    { deposit: "500,000", days90: "515,000", year1: "557,300", year2: "621,200", year3: "692,400", year6: "1,000,000" },
+];
+
 
 export default function FixedDepositPage() {
   const fdImage = getImage("fixed-deposit");
@@ -39,6 +48,40 @@ export default function FixedDepositPage() {
             )}
           </div>
         </div>
+        
+        <div className="my-16 md:my-24">
+          <h2 className="text-3xl font-bold font-headline text-center mb-12">FD Maturity Amount Chart</h2>
+          <Card className="max-w-6xl mx-auto shadow-lg">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="font-semibold">Deposit Amount</TableHead>
+                  <TableHead className="font-semibold text-center">After 90 days</TableHead>
+                  <TableHead className="font-semibold text-center">After 1 Year</TableHead>
+                  <TableHead className="font-semibold text-center">After 2 Years</TableHead>
+                  <TableHead className="font-semibold text-center">After 3 Years</TableHead>
+                  <TableHead className="font-semibold text-center">After 6 Years 6 Months</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {maturityData.map((row) => (
+                  <TableRow key={row.deposit}>
+                    <TableCell className="font-medium text-center">{row.deposit}</TableCell>
+                    <TableCell className="text-center">{row.days90}</TableCell>
+                    <TableCell className="text-center">{row.year1}</TableCell>
+                    <TableCell className="text-center">{row.year2}</TableCell>
+                    <TableCell className="text-center">{row.year3}</TableCell>
+                    <TableCell className="text-center">{row.year6}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+             <CardContent>
+                <p className="text-xs text-muted-foreground pt-4">* This is an example, actual returns may vary.</p>
+            </CardContent>
+          </Card>
+        </div>
+
 
         <div className="my-16 md:my-24">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Features & Benefits</h2>
