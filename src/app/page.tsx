@@ -212,7 +212,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">About Us</h2>
               <p className="text-muted-foreground mb-6">
-                Established on March 13, 2015, Jan Vikas Kalyan Co-operative Society is registered under the DCS Act 2013 (Reg. No. 10358/3TC/2015). We are committed to the financial empowerment of our members through a culture of savings and mutual support.
+                Jan Vikas Kalyan Co-operative Thrift & Credit Society Limited (hence forth referred to as Jan Vikas Kalyan or the Society) is a Thrift & Credit Cooperative Society registered under the Delhi Cooperative Society (DCS) Act 2013. The registration number of the Society is (10358/Sec-3/TC/2015). The Society was registered with the Registrar of Cooperative Societies, Delhi on 13th of March 2015.
               </p>
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
