@@ -12,7 +12,7 @@ export default function SavingDepositPage() {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-primary/10">
+      <section className="py-20 md:py-32 text-primary-foreground" style={{ backgroundColor: '#132440' }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Saving Deposit Account</h1>
         </div>
