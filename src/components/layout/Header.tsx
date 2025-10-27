@@ -66,11 +66,11 @@ export function Header() {
               <Button
                 variant="ghost"
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary focus:outline-none focus:ring-0 p-0 h-auto",
-                  "data-[state=open]:text-primary",
-                   isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary font-bold" : "text-foreground/80",
-                   isLoansSubmenuActive(pathname) && href === '/loans' ? "text-primary font-bold" : "text-foreground/80",
-                   pathname.startsWith(href) && href !== '/plans' && href !== '/loans' ? "text-primary font-bold" : "text-foreground/80",
+                  "text-sm font-medium transition-colors hover:text-primary-foreground focus:outline-none focus:ring-0 p-0 h-auto",
+                  "data-[state=open]:text-primary-foreground",
+                   isPlansSubmenuActive(pathname) && href === '/plans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
+                   isLoansSubmenuActive(pathname) && href === '/loans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
+                   pathname.startsWith(href) && href !== '/plans' && href !== '/loans' ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
                    inSheet && "text-lg justify-start w-full",
                    inSheet && (isPlansSubmenuActive(pathname) && href === '/plans') ? "text-primary" : inSheet ? "text-muted-foreground" : "",
                    inSheet && (isLoansSubmenuActive(pathname) && href === '/loans') ? "text-primary" : inSheet ? "text-muted-foreground" : "",
@@ -94,8 +94,8 @@ export function Header() {
             key={href}
             href={href}
             className={cn(
-              "text-sm font-medium transition-colors hover:text-primary",
-               pathname === href ? "text-primary font-bold" : "text-foreground/80",
+              "text-sm font-medium transition-colors hover:text-primary-foreground",
+               pathname === href ? "text-primary-foreground font-bold" : "text-primary-foreground/80",
                inSheet && "text-lg",
                inSheet && pathname === href ? "text-primary" : inSheet ? "text-muted-foreground" : ""
             )}
@@ -108,11 +108,11 @@ export function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-card shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b bg-primary shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Landmark className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg">Jan Vikas Kalyan</span>
+          <Landmark className="h-6 w-6 text-primary-foreground" />
+          <span className="font-bold text-lg text-primary-foreground">Jan Vikas Kalyan</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-4">
