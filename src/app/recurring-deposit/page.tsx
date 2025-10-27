@@ -28,32 +28,7 @@ export default function RecurringDepositPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <h2 className="text-3xl font-bold font-headline mb-4">A Habit of Savings for a Brighter Future</h2>
-            <p className="text-muted-foreground mb-6">
-              A Recurring Deposit (RD) is a special term deposit that allows you to invest a fixed amount every month for a predetermined period. It's an excellent tool for those who want to save regularly for a specific goal, like a child's education, a wedding, or a down payment on a home. With attractive interest rates and the benefit of compounding, our RD scheme helps you reach your financial milestones with ease.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/contact">
-                Start Saving Today <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-          <div className="order-1 md:order-2">
-            {rdImage && (
-              <Image
-                src={rdImage.imageUrl}
-                alt={rdImage.description}
-                data-ai-hint={rdImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            )}
-          </div>
-        </div>
-
+        
         <div className="my-16 md:my-24">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Features & Benefits</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
