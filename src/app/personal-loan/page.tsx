@@ -15,9 +15,6 @@ export default function PersonalLoanPage() {
       <section className="py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Personal / Regular Loan</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Meet your planned expenses with our member-friendly Personal Loans. Enjoy a straightforward process with competitive interest rates.
-          </p>
         </div>
       </section>
 
@@ -126,7 +123,7 @@ export default function PersonalLoanPage() {
                         </li>
                         <li className="flex items-start">
                             <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Identity Proof and Address Proof.</span>
+                            <span>Identity and Address Proof.</span>
                         </li>
                          <li className="flex items-start">
                             <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
