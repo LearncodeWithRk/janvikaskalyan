@@ -1,8 +1,7 @@
 
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, Shield, PiggyBank, BadgePercent, AlertTriangle, User, CircleDollarSign, Percent, XCircle } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, Shield, PiggyBank, BadgePercent, AlertTriangle, User, CircleDollarSign, Percent, XCircle } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -145,61 +144,7 @@ export default function FixedDepositPage() {
                 </Card>
             </div>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <UserCheck className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Eligibility</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                    <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Must be a member of Jan Vikas Kalyan Society.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>An individual who has attained the age of 18 years.</span>
-                        </li>
-                         <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Can be opened in the name of a minor with a guardian.</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <FileText className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Required Documents</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                     <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Completed Fixed Deposit application form.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Identity Proof (Aadhaar Card, PAN Card, etc.).</span>
-                        </li>
-                         <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Address Proof (Electricity Bill, Passport, etc.).</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-        </div>
-
       </div>
     </div>
   );
 }
-
-    
