@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,7 @@ const loanTypes = [
       "Special consideration for our members in need.",
       "Immediate financial relief.",
     ],
-    href: "/contact"
+    href: "/emergency-loan"
   },
   {
     id: "loan-against-deposit",
@@ -85,7 +86,7 @@ export default function LoansPage() {
               </CardContent>
               <div className="p-6 pt-0">
                 <Button asChild className="w-full">
-                  <Link href={loan.href}>{loan.id === 'personal-loan-hero' ? 'Learn More' : 'Enquire Now'}</Link>
+                  <Link href={loan.href}>{loan.id === 'loan-against-deposit' ? 'Enquire Now' : 'Learn More'}</Link>
                 </Button>
               </div>
             </Card>
