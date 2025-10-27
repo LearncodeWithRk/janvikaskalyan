@@ -1,55 +1,18 @@
+
 "use client";
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-import { Mail, Phone, User, CheckCircle, UserPlus, FileText, HelpCircle, Users, Check, Award, Shield } from "lucide-react";
+import { Mail, Phone, User, CheckCircle, UserPlus, FileText, HelpCircle, Users, Check, Award, Shield, Download } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Link from "next/link";
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  phone: z.string().min(10, { message: "Please enter a valid phone number." }),
-});
 
 export default function JoinPage() {
-  const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-    },
-  });
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Request Submitted!",
-      description: "Thank you for your interest. We will contact you shortly with membership details.",
-    });
-
-    form.reset();
-  }
-
+  
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <div className="max-w-3xl mx-auto text-center mb-12">
@@ -140,66 +103,16 @@ export default function JoinPage() {
         <div>
           <Card className="shadow-lg">
              <CardHeader>
-                <CardTitle className="text-2xl font-headline">Request Membership Information</CardTitle>
-                <CardDescription>Fill out the form below and our team will get in touch with you.</CardDescription>
+                <CardTitle className="text-2xl font-headline">Download Membership Form</CardTitle>
+                <CardDescription>Click the button below to download the membership application form.</CardDescription>
             </CardHeader>
             <CardContent>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Full Name</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                            <Input placeholder="John Doe" {...field} className="pl-10" />
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email Address</FormLabel>
-                        <FormControl>
-                           <div className="relative">
-                            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                            <Input placeholder="john.doe@example.com" {...field} className="pl-10" />
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone Number</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                            <Input placeholder="+91 98765 43210" {...field} className="pl-10" />
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={form.formState.isSubmitting}>
-                    {form.formState.isSubmitting ? "Submitting..." : "Submit Request"}
-                    <UserPlus className="ml-2 h-5 w-5" />
-                  </Button>
-                </form>
-              </Form>
+               <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Link href="https://janvikaskalyan.com/wp-content/uploads/2020/11/JAN-VIKAS-KALYAN-CO-OPERATIVE-THRIFT-CREDIT-SOCIETY-LTD.pdf" target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Form
+                  </Link>
+                </Button>
             </CardContent>
           </Card>
         </div>
