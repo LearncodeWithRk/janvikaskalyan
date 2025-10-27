@@ -77,53 +77,6 @@ export default function EmergencyLoanPage() {
             </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <UserCheck className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Eligibility</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                    <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Must be an active member of Jan Vikas Kalyan Society.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Subject to the society's credit assessment and policies.</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <FileText className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Required Documents</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                     <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Completed Emergency Loan Application Form.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Proof of emergency (e.g., medical bills), if applicable.</span>
-                        </li>
-                         <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Standard KYC documents (ID and Address proof).</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-        </div>
-
       </div>
     </div>
   );
