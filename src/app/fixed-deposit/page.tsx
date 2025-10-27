@@ -49,7 +49,6 @@ export default function FixedDepositPage() {
         </div>
         
         <div className="my-16 md:my-24">
-          <h2 className="text-3xl font-bold font-headline text-center mb-12">FD Maturity Amount Chart</h2>
           <Card className="max-w-6xl mx-auto shadow-lg">
             <Table>
               <TableHeader>
