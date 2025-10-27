@@ -16,9 +16,6 @@ export default function EmergencyLoanPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Emergency Loan</h1>
-            <p className="text-lg text-muted-foreground">
-              For unexpected financial needs, our Emergency Loan provides quick access to funds. Whether it's a medical urgency or an unforeseen expense, we're here to support you without delay.
-            </p>
           </div>
         </div>
       </section>
