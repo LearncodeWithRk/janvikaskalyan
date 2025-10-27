@@ -87,7 +87,8 @@ export default function FixedDepositPage() {
                     </CardHeader>
                     <CardContent>
                         <ul className="space-y-2 text-muted-foreground">
-                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society. For Society membership related information <Link href="/join" className="text-primary underline">click here</Link>.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline">click here</Link>.</span></li>
                         </ul>
                     </CardContent>
                 </Card>
