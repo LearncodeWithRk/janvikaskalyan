@@ -56,7 +56,6 @@ export default function RecurringDepositPage() {
               </TableBody>
             </Table>
              <CardContent>
-                <p className="text-xs text-muted-foreground pt-4">* This is an example, actual returns may vary.</p>
             </CardContent>
           </Card>
         </div>
