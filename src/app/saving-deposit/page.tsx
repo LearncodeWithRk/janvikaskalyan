@@ -19,31 +19,6 @@ export default function SavingDepositPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <p className="text-muted-foreground mb-6">
-              Our Saving Deposit account is designed for your day-to-day financial needs. It offers complete liquidity, allowing you to deposit and withdraw funds as needed, while also earning you a competitive interest rate on your balance. It's the perfect way to keep your surplus cash safe and productive.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/contact">
-                Open an Account <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-          <div className="order-1 md:order-2">
-            {savingDepositImage && (
-              <Image
-                src={savingDepositImage.imageUrl}
-                alt={savingDepositImage.description}
-                data-ai-hint={savingDepositImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            )}
-          </div>
-        </div>
-
         <div className="my-16 md:my-24">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Special Features</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
