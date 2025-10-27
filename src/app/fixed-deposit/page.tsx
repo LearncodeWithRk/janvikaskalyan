@@ -27,24 +27,12 @@ export default function FixedDepositPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
+        <div className="grid md:grid-cols-1 gap-12 items-center">
+          <div className="text-center">
             <h2 className="text-3xl font-bold font-headline mb-4">अपनी राशि को मात्र 6 वर्ष 6 महीने में दोगुना करें</h2>
             <p className="text-muted-foreground text-lg mb-6">
               Note : Rate of Interest 12% Annual
             </p>
-          </div>
-          <div className="order-1 md:order-2">
-            {fdImage && (
-              <Image
-                src={fdImage.imageUrl}
-                alt={fdImage.description}
-                data-ai-hint={fdImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            )}
           </div>
         </div>
         
