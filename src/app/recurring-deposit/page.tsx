@@ -24,9 +24,6 @@ export default function RecurringDepositPage() {
       <section className="py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Recurring Deposit (RD)</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Discipline your savings and build a substantial corpus over time. Invest a fixed amount every month and watch your savings grow with the power of compounding.
-          </p>
         </div>
       </section>
 
