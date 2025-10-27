@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, Shield, PiggyBank, BadgePercent, AlertTriangle, User, CircleDollarSign, Percent, XCircle } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -66,7 +66,7 @@ export default function FixedDepositPage() {
               <TableBody>
                 {maturityData.map((row) => (
                   <TableRow key={row.deposit}>
-                    <TableCell className="font-medium text-center">{row.deposit}</TableCell>
+                    <TableCell className="font-medium">{row.deposit}</TableCell>
                     <TableCell className="text-center">{row.days90}</TableCell>
                     <TableCell className="text-center">{row.year1}</TableCell>
                     <TableCell className="text-center">{row.year2}</TableCell>
@@ -84,46 +84,63 @@ export default function FixedDepositPage() {
 
 
         <div className="my-16 md:my-24">
-            <h2 className="text-3xl font-bold font-headline text-center mb-12">Features & Benefits</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Assured Returns</CardTitle>
+            <h2 className="text-3xl font-bold font-headline text-center mb-12">Plan Details</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <User className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">ELIGIBILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Enjoy guaranteed returns on your investment, unaffected by market fluctuations.</p>
+                        <p className="text-muted-foreground">The applicant must be a member of the Society. For Society membership related information <Link href="/join" className="text-primary underline">Click Here</Link>.</p>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Flexible Tenure</CardTitle>
+                 <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Choose from a wide range of tenure options to match your financial goals.</p>
+                        <p className="text-muted-foreground">Rs. 5000/-</p>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Loan Facility</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <PiggyBank className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">NOMINATION FACILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Get a loan of up to 90% against your fixed deposit in case of emergencies.</p>
+                        <p className="text-muted-foreground">Nomination Facility Available.</p>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Competitive Interest</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <BadgePercent className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">LOAN FACILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">We offer attractive interest rates to maximize the growth of your savings.</p>
+                        <p className="text-muted-foreground">Maximum up to 80% against Deposit Amount. Interest Rate (Reducing) 3% extra.</p>
                     </CardContent>
                 </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Nomination Facility</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <AlertTriangle className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">PREMATURE PAYMENT</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Nominate a beneficiary to receive the funds in your absence.</p>
+                        <p className="text-muted-foreground">Premature Payment guideline shall be applicable as per Society’s Terms & Condition.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <Shield className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">SPECIAL FEATURES</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li className="flex items-start"><XCircle className="h-5 w-5 text-destructive mr-2 mt-1 shrink-0"/> No TDS is applicable on the interest earned on deposits.</li>
+                            <li className="flex items-start"><Percent className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/> Offers higher interest rates.</li>
+                        </ul>
                     </CardContent>
                 </Card>
             </div>
@@ -184,3 +201,5 @@ export default function FixedDepositPage() {
     </div>
   );
 }
+
+    
