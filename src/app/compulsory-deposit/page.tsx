@@ -19,31 +19,7 @@ export default function CompulsoryDepositPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <h2 className="text-3xl font-bold font-headline mb-4">Building a Foundation of Financial Discipline</h2>
-            <p className="text-muted-foreground mb-6">
-              The Compulsory Deposit scheme is a cornerstone of membership at Jan Vikas Kalyan. It encourages a mandatory, regular saving habit, creating a disciplined financial approach and a safety net for your future. This collective saving effort also strengthens the society's ability to support all its members.
-            </p>
-            <Button asChild size="lg">
-              <Link href="/join">
-                Become a Member <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-          <div className="order-1 md:order-2">
-            {compulsoryDepositImage && (
-              <Image
-                src={compulsoryDepositImage.imageUrl}
-                alt={compulsoryDepositImage.description}
-                data-ai-hint={compulsoryDepositImage.imageHint}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-            )}
-          </div>
-        </div>
+        
 
         <div className="my-16 md:my-24">
             <h2 className="text-3xl font-bold font-headline text-center mb-12">Features & Benefits</h2>
