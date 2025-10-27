@@ -117,57 +117,6 @@ export default function RecurringDepositPage() {
             </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <UserCheck className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Eligibility</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                    <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Must be a member of Jan Vikas Kalyan Society.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>An individual who is 18 years of age or older.</span>
-                        </li>
-                         <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>A minor can open an account with a legal guardian.</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-            <Card className="shadow-lg">
-                <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <FileText className="h-8 w-8 text-primary" />
-                        <CardTitle className="text-2xl font-headline">Required Documents</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent>
-                     <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Duly filled Recurring Deposit application form.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Valid Identity Proof (Aadhaar Card, PAN Card, etc.).</span>
-                        </li>
-                         <li className="flex items-start">
-                            <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>Valid Address Proof (Passport, Driving License, etc.).</span>
-                        </li>
-                    </ul>
-                </CardContent>
-            </Card>
-        </div>
-
       </div>
     </div>
   );
