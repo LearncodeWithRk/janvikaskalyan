@@ -61,6 +61,66 @@
       "imageHint": "educational seminar"
     },
     {
+      "id": "gallery9",
+      "description": "Team members collaborating on a project.",
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
+    },
+    {
+      "id": "gallery10",
+      "description": "A successful business handshake.",
+      "imageUrl": "https://images.unsplash.com/photo-1622675338228-04d80cb2b1f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business handshake"
+    },
+    {
+      "id": "gallery11",
+      "description": "A person signing a document.",
+      "imageUrl": "https://images.unsplash.com/photo-1563207629-9135315510f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWduaW5nJTIwZG9jdW1lbnR8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "signing document"
+    },
+    {
+      "id": "gallery12",
+      "description": "A diverse group of people in a meeting.",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaXZlcnNlJTIwZ3JvdXB8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diverse group"
+    },
+    {
+      "id": "gallery13",
+      "description": "A vibrant community gathering.",
+      "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBnYXRoZXJpbmd8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community gathering"
+    },
+    {
+      "id": "gallery14",
+      "description": "Close-up of a signed contract.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224154-260325c2766d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzaWduZWQlMjBjb250cmFjdHxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "signed contract"
+    },
+    {
+      "id": "gallery15",
+      "description": "People networking at a corporate event.",
+      "imageUrl": "https://images.unsplash.com/photo-1538688423619-a81d3f23454b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMG5ldHdvcmtpbmd8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business networking"
+    },
+    {
+      "id": "gallery16",
+      "description": "A presentation at a business conference.",
+      "imageUrl": "https://images.unsplash.com/photo-1582653291997-063997c029d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business conference"
+    },
+    {
+      "id": "gallery17",
+      "description": "A financial advisor explaining charts to a client.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial planning"
+    },
+    {
+      "id": "gallery18",
+      "description": "Hands holding a plant growing from coins.",
+      "imageUrl": "https://images.unsplash.com/photo-1423592707957-3b212afa3738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBpbnZlc3RtZW50fGVufDB8fHx8MTc2MzA0MjY1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "investment growth"
+    },
+    {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
       "imageUrl": "https://images.unsplash.com/photo-1639755248628-6e54a8063a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -105,7 +165,7 @@
     {
       "id": "registration-certificate",
       "description": "Official registration certificate of the society.",
-      "imageUrl": "https://images.unsplash.com/photo-1584445584400-1a7cc5de77ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjE1NjI4MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/stabl-in-prod-media-public-212130/user/292723/240726/stablediffusion_6d3l2w6v3k/6d3l2w6v3k_0.png",
       "imageHint": "certificate document"
     },
     {

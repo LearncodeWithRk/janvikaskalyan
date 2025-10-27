@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -16,7 +17,17 @@ export default function GalleryPage() {
     'gallery5',
     'gallery6',
     'gallery7',
-    'gallery8'
+    'gallery8',
+    'gallery9',
+    'gallery10',
+    'gallery11',
+    'gallery12',
+    'gallery13',
+    'gallery14',
+    'gallery15',
+    'gallery16',
+    'gallery17',
+    'gallery18'
   ].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
   
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
