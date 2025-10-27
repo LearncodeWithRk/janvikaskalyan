@@ -12,7 +12,9 @@ export default function GalleryPage() {
     'gallery1', 
     'gallery2', 
     'gallery3', 
-    'gallery4'
+    'gallery4',
+    'gallery5',
+    'gallery6'
   ].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
   
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);

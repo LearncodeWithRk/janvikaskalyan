@@ -178,7 +178,7 @@ export default function HomePage() {
     { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
   ];
 
-  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4'].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
+  const galleryImages = ['gallery1', 'gallery2', 'gallery3', 'gallery4', 'gallery5', 'gallery6'].map(id => getImage(id)).filter((img): img is ImagePlaceholder => !!img);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const handleNextImage = (e: React.MouseEvent) => {
