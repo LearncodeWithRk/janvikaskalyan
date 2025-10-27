@@ -118,7 +118,7 @@ export default function CompulsoryDepositPage() {
                         </li>
                          <li className="flex items-start">
                             <CheckCircle className="h-5 w-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                            <span>To learn more about becoming a member, <Link href="/join" className="text-primary underline">click here</Link>.</span>
+                            <span>To learn more about becoming a member, <Link href="/join" className="text-primary underline">visit our membership page</Link>.</span>
                         </li>
                     </ul>
                 </CardContent>
