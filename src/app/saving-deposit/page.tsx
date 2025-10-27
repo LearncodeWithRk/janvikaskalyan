@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, Banknote, Shield, BookOpen, Clock } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, Banknote, Shield, BookOpen, Clock, User, CircleDollarSign, PiggyBank } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 
@@ -21,49 +21,49 @@ export default function SavingDepositPage() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="my-16 md:my-24">
             <h2 className="text-3xl font-bold font-headline text-left mb-12">Saving Account : Return of Investment @ 6% per annum</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-                <Card className="text-center">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-3">
-                            <Shield className="h-7 w-7 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg">No TDS</CardTitle>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <User className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">ELIGIBILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground text-sm">No TDS is applicable on the interest earned on deposits.</p>
+                        <ul className="space-y-2 text-muted-foreground">
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline">(Click Here)</Link>.</span></li>
+                        </ul>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-3">
-                            <Banknote className="h-7 w-7 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg">Higher Interest</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <Shield className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">SPECIAL FEATURES</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground text-sm">Offers higher interest rates compared to traditional banks.</p>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> No TDS is applicable on the interest earned on deposits.</li>
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Offers higher interest rates.</li>
+                             <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Passbook will be provided.</li>
+                            <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0" /> Any time deposit and withdrawal.</li>
+                        </ul>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-3">
-                           <BookOpen className="h-7 w-7 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg">Passbook Provided</CardTitle>
+                 <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground text-sm">A passbook will be provided to keep track of your transactions.</p>
+                        <p className="text-muted-foreground">Rs. 100/-</p>
                     </CardContent>
                 </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-3">
-                            <Clock className="h-7 w-7 text-primary" />
-                        </div>
-                        <CardTitle className="text-lg">Anytime Banking</CardTitle>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <PiggyBank className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">NOMINATION FACILITY</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground text-sm">Conveniently deposit and withdraw your funds anytime.</p>
+                        <p className="text-muted-foreground">Nomination Facility Available.</p>
                     </CardContent>
                 </Card>
             </div>
