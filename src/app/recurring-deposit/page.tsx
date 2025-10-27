@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, TrendingUp } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, TrendingUp, User, CircleDollarSign, PiggyBank, AlertTriangle, Shield, Percent, XCircle } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -29,60 +29,6 @@ export default function RecurringDepositPage() {
 
       <div className="container mx-auto px-4 py-16 md:py-24">
         
-        <div className="my-16 md:my-24">
-            <h2 className="text-3xl font-bold font-headline text-center mb-12">Features & Benefits</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Regular Savings</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Fosters a disciplined saving habit with fixed monthly installments.</p>
-                    </CardContent>
-                </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Power of Compounding</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Earn interest on your interest, helping your money grow faster over time.</p>
-                    </CardContent>
-                </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Goal-Oriented</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Ideal for achieving short-term or long-term financial goals with a clear plan.</p>
-                    </CardContent>
-                </Card>
-                <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Flexible Tenure</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Choose a tenure that aligns with your financial objectives, from 1 to 10 years.</p>
-                    </CardContent>
-                </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Loan Facility</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Avail a loan of up to 90% against your RD balance for urgent financial needs.</p>
-                    </CardContent>
-                </Card>
-                 <Card className="text-center">
-                    <CardHeader>
-                        <CardTitle className="text-lg">Guaranteed Returns</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground">Enjoy fixed, predictable returns on your investment, free from market volatility.</p>
-                    </CardContent>
-                </Card>
-            </div>
-        </div>
-
         <div className="my-16 md:my-24">
           <h2 className="text-3xl font-bold font-headline text-center mb-12">RD Maturity Amount Chart</h2>
           <Card className="max-w-6xl mx-auto shadow-lg">
@@ -116,6 +62,61 @@ export default function RecurringDepositPage() {
           </Card>
         </div>
 
+        <div className="my-16 md:my-24">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <User className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">ELIGIBILITY</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-2 text-muted-foreground">
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>The applicant must be a member of the Society.</span></li>
+                           <li className="flex items-start"><CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/><span>For Society membership related information <Link href="/join" className="text-primary underline">visit here</Link>.</span></li>
+                        </ul>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Rs. 500/- and further in multiple of Rs. 100/-</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <PiggyBank className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">NOMINATION FACILITY</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Nomination Facility Available.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <AlertTriangle className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">PREMATURE PAYMENT</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Premature Payment guideline shall be applicable as per Society’s Terms & Condition.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader className="flex flex-row items-center gap-4">
+                        <Shield className="h-8 w-8 text-primary" />
+                        <CardTitle className="text-lg">SPECIAL FEATURES</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="space-y-2 text-muted-foreground">
+                            <li className="flex items-start"><XCircle className="h-5 w-5 text-destructive mr-2 mt-1 shrink-0"/> No TDS is applicable on the interest earned on deposits.</li>
+                            <li className="flex items-start"><Percent className="h-5 w-5 text-green-500 mr-2 mt-1 shrink-0"/> Offers higher interest rates.</li>
+                        </ul>
+                    </CardContent>
+                </Card>
+            </div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-12">
             <Card className="shadow-lg">
