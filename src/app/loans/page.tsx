@@ -7,7 +7,7 @@ import { getImage } from '@/lib/placeholder-images';
 
 const loanTypes = [
   {
-    id: "personal-loan",
+    id: "personal-loan-hero",
     title: "Personal / Regular Loan",
     description: "Meet your planned expenses, from home renovations to family weddings, with our member-friendly Personal Loans. Enjoy a straightforward process with competitive interest rates.",
     features: [
@@ -16,6 +16,7 @@ const loanTypes = [
       "Flexible repayment options.",
       "No hidden charges.",
     ],
+    href: "/personal-loan",
   },
   {
     id: "emergency-loan",
@@ -27,6 +28,7 @@ const loanTypes = [
       "Special consideration for our members in need.",
       "Immediate financial relief.",
     ],
+    href: "/contact"
   },
   {
     id: "loan-against-deposit",
@@ -38,6 +40,7 @@ const loanTypes = [
       "Continue earning interest on your deposit.",
       "Quick and hassle-free disbursal.",
     ],
+    href: "/contact"
   },
 ];
 
@@ -82,7 +85,7 @@ export default function LoansPage() {
               </CardContent>
               <div className="p-6 pt-0">
                 <Button asChild className="w-full">
-                  <Link href="/contact">Enquire Now</Link>
+                  <Link href={loan.href}>{loan.id === 'personal-loan-hero' ? 'Learn More' : 'Enquire Now'}</Link>
                 </Button>
               </div>
             </Card>
