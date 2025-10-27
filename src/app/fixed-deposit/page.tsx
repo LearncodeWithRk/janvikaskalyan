@@ -15,9 +15,6 @@ export default function FixedDepositPage() {
       <section className="py-20 md:py-32 bg-primary/10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">Fixed Deposit (FD)</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Give your portfolio the stability of returns, safety, and liquidity. Invest in our Fixed Deposit scheme for attractive and assured returns.
-          </p>
         </div>
       </section>
 
