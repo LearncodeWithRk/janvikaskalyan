@@ -81,11 +81,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="relative w-full h-[85vh] bg-primary/10 flex items-center justify-center">
-        <Carousel className="w-full h-full" opts={{ loop: true }}>
-          <CarouselContent className="h-full">
+      <section className="relative w-full h-[85vh] bg-primary/10 flex items-center justify-center overflow-hidden">
+        <Carousel className="w-full h-full" plugins={[]} opts={{ loop: true }}>
+          <CarouselContent className="h-full -ml-0">
             {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-full p-0">
+              <CarouselItem key={index} className="h-full p-0 basis-full">
                 <div className="relative w-full h-full">
                   {slide.image && (
                     <Image
