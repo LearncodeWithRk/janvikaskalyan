@@ -34,7 +34,7 @@ const heroSlides = [
     buttonLink: "/contact",
   },
   {
-    title: "",
+    title: "Loan",
     description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
     image: getImage('personal-loan-hero'),
     buttonText: "सम्पर्क करें",
@@ -271,7 +271,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-    
-
-    
