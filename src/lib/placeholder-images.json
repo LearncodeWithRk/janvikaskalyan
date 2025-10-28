@@ -123,19 +123,19 @@
     {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
-      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a706299a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xkZW4lMjBjb2luc3xlbnwwfHx8fDE3NjIyOTMwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621947081720-86970823b77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MjI5Mzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure savings"
     },
     {
       "id": "recurring-deposit",
       "description": "A stack of coins growing, with a plant sprouting from the top, symbolizing steady growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RtZW50JTIwZ3Jvd3RofGVufDB8fHx8MTc2MjI5MzA4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a706299a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncm93aW5nJTIwY29pbnN8ZW58MHx8fHwxNzYyMjkzNzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growing coins"
     },
     {
       "id": "saving-deposit",
       "description": "A clear jar half-full of coins with a label that says 'SAVINGS'.",
-      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjIyOTMxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYXZpbmdzJTIwamFyfGVufDB8fHx8MTc2MjI5MzgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "savings jar"
     },
     {
@@ -146,21 +146,21 @@
     },
     {
       "id": "personal-loan-hero",
-      "description": "A happy couple standing in front of their new home.",
-      "imageUrl": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBob21lfGVufDB8fHx8MTc2MjI5MzE5MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy couple"
+      "description": "A person reviewing loan documents at a desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04421cd6c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMGxvYW58ZW58MHx8fHwxNzYyMjkzODYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "personal loan"
     },
     {
       "id": "emergency-loan",
-      "description": "A lifebuoy ring, symbolizing safety and rescue in times of need.",
-      "imageUrl": "https://images.unsplash.com/photo-1521791055326-d6b818c8965a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoZWxwaW5nJTIwaGFuZHxlbnwwfHx8fDE3NjE0MTIyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "life buoy"
+      "description": "An ambulance, symbolizing urgency and immediate help.",
+      "imageUrl": "https://images.unsplash.com/photo-1605289355469-de6a08c02359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbWVyZ2VuY3klMjBsb2FufGVufDB8fHx8MTc2MjI5Mzg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "emergency help"
     },
     {
       "id": "loan-against-deposit",
-      "description": "A key on top of a stack of money, symbolizing unlocking value from savings.",
-      "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsZXZlcmFnZSUyMHNhdmluZ3N8ZW58MHx8fHwxNzYyMjkzMjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "unlocking value"
+      "description": "A vault, symbolizing security and leveraging assets.",
+      "imageUrl": "https://images.unsplash.com/photo-1585649433439-c999d06b6b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5rJTIwdmF1bHR8ZW58MHx8fHwxNzYyMjkzOTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "secure vault"
     },
     {
       "id": "registration-certificate",
