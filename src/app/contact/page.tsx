@@ -165,13 +165,13 @@ export default function ContactPage() {
                 </div>
                 <div>
                 <h4 className="font-semibold">Working Offices</h4>
-                <div className="text-muted-foreground space-y-2 mt-1">
-                    <p>B6 , First Floor , Main Road , Aali Extension , New Delhi – 110076</p>
-                    <p>30 No.,DSIDC Shed, Scheme 3 , Near Dharma Kanta , Okhla Phase -II , 110020</p>
-                    <p>A-29, Gali No.-1, Jaitpur Extn., Part-2, Near NTPC Ground, Badarpur, New Delhi-110044</p>
-                    <p>E-86A, Mangal Bazar Road, Sangam Vihar,New Delhi-80</p>
-                    <p>H.No. 1287, Phase-III, J.J. Colony, Madanpur Khadar, New Delhi-76</p>
-                </div>
+                <ul className="text-muted-foreground space-y-2 mt-1 list-disc pl-5">
+                    <li>B6 , First Floor , Main Road , Aali Extension , New Delhi – 110076</li>
+                    <li>30 No.,DSIDC Shed, Scheme 3 , Near Dharma Kanta , Okhla Phase -II , 110020</li>
+                    <li>A-29, Gali No.-1, Jaitpur Extn., Part-2, Near NTPC Ground, Badarpur, New Delhi-110044</li>
+                    <li>E-86A, Mangal Bazar Road, Sangam Vihar,New Delhi-80</li>
+                    <li>H.No. 1287, Phase-III, J.J. Colony, Madanpur Khadar, New Delhi-76</li>
+                </ul>
                 </div>
             </div>
             <div className="flex items-start gap-4">
