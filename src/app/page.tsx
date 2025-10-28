@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { getImage, ImagePlaceholder } from '@/lib/placeholder-images';
 import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, ChevronLeft, ChevronRight, HandCoins } from 'lucide-react';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 import {
@@ -15,6 +15,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -78,11 +79,36 @@ export default function HomePage() {
 
   const selectedImage = selectedImageIndex !== null ? galleryImages[selectedImageIndex] : null;
 
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!carouselApi) {
+      return;
+    }
+
+    setCurrent(carouselApi.selectedScrollSnap());
+
+    const onSelect = () => {
+      setCurrent(carouselApi.selectedScrollSnap());
+    };
+
+    carouselApi.on("select", onSelect);
+    return () => {
+      carouselApi.off("select", onSelect);
+    };
+  }, [carouselApi]);
+
+  const onDotClick = useCallback((index: number) => {
+    carouselApi?.scrollTo(index);
+  }, [carouselApi]);
+
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Carousel 
+          setApi={setCarouselApi}
           className="w-full h-full" 
           opts={{ loop: true }}
           plugins={[
@@ -118,6 +144,19 @@ export default function HomePage() {
           </CarouselContent>
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
+           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            {heroSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => onDotClick(index)}
+                className={cn(
+                  "h-3 w-3 rounded-full transition-colors",
+                  current === index ? "bg-white" : "bg-white/50"
+                )}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </Carousel>
       </section>
 
