@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Landmark } from "lucide-react";
+import { Menu, Landmark, Phone, Mail, FileText } from "lucide-react";
 import Image from 'next/image';
 
 import { Button } from "@/components/ui/button";
@@ -9,13 +9,32 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
 import { NavLinks, MobileNavLinks } from "./NavLinks";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-primary shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-primary shadow-sm">
+      <div className="bg-background/10 text-primary-foreground py-2 text-xs">
+          <div className="container flex items-center justify-between px-4 md:px-6">
+              <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4" />
+                      <span>+91 9625380067, +91 9205437299</span>
+                  </div>
+                  <div className="hidden md:flex items-center gap-2">
+                      <Mail className="h-4 w-4" />
+                      <span>Janvikaskalyan200@gmail.com</span>
+                  </div>
+              </div>
+              <Button variant="ghost" size="sm" asChild className="h-auto p-1 text-xs hover:bg-primary-foreground/20 hover:text-primary-foreground">
+                <Link href="/forms">
+                    <FileText className="mr-2 h-4 w-4" />
+                    Membership Form
+                </Link>
+              </Button>
+          </div>
+      </div>
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image src="https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png" alt="JVK Logo" width={85} height={85} />

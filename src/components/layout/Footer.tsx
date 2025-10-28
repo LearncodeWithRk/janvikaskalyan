@@ -17,6 +17,7 @@ export function Footer() {
               <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
               <li><Link href="/gallery" className="text-muted-foreground hover:text-primary transition-colors">Gallery</Link></li>
               <li><Link href="/join" className="text-muted-foreground hover:text-primary transition-colors">Join Us</Link></li>
+              <li><Link href="/forms" className="text-muted-foreground hover:text-primary transition-colors">Membership Form</Link></li>
               <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact Us</Link></li>
             </ul>
           </div>
