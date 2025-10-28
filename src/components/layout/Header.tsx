@@ -9,6 +9,7 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
 } from "@/components/ui/sheet";
 import { NavLinks, MobileNavLinks } from "./NavLinks";
 
@@ -54,7 +55,8 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-                <MobileNavLinks />
+              <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+              <MobileNavLinks />
             </SheetContent>
           </Sheet>
         </div>
