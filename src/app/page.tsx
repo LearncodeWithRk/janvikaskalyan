@@ -20,7 +20,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const heroSlides = [
   {
-    title: "30,000+ Members Strong",
+    title: "Celebrating To Become More Than 30,000 + Members",
     description: "Established more than 11 years",
     image: getImage('cooperative-meeting'),
     buttonText: "Become a member",
@@ -34,7 +34,7 @@ const heroSlides = [
     buttonLink: "/contact",
   },
   {
-    title: "Loan",
+    title: "",
     description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
     image: getImage('personal-loan-hero'),
     buttonText: "सम्पर्क करें",
@@ -271,5 +271,7 @@ export default function HomePage() {
     </div>
   );
 }
+
+    
 
     
