@@ -11,13 +11,15 @@ export default function AboutPage() {
   const certificateImage = getImage('registration-certificate');
   return (
     <div className="bg-background">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About Jan Vikas Kalyan Society</h1>
-            <p className="text-lg text-muted-foreground">
+       <section className="py-20 md:py-32 text-primary-foreground" style={{ backgroundColor: '#132440' }}>
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About Jan Vikas Kalyan Society</h1>
+            <p className="text-lg text-muted-foreground/80">
               Your trusted partner in financial growth and community empowerment since 2015.
             </p>
         </div>
+      </section>
+      <div className="container mx-auto px-4 py-16 md:py-24">
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center my-16">
           <div>
