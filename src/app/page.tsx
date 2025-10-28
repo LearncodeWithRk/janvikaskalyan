@@ -78,50 +78,38 @@ export default function HomePage() {
 
   const selectedImage = selectedImageIndex !== null ? galleryImages[selectedImageIndex] : null;
 
+  const heroImage = getImage('cooperative-meeting');
+
 
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="relative w-full h-[85vh] bg-primary/10 flex items-center justify-center overflow-hidden">
-        <Carousel
-          className="w-full h-full"
-          plugins={[
-            Autoplay({
-              delay: 5000,
-            }),
-          ]}
-          opts={{
-            loop: true,
-          }}
-        >
-          <CarouselContent className="h-full">
-            {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-full p-0">
-                <div className="relative w-full h-full">
-                  {slide.image && (
-                    <Image
-                      src={slide.image.imageUrl}
-                      alt={slide.title}
-                      fill
-                      className="object-cover"
-                      priority={index === 0}
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-black/50" />
-                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
-                    <h2 className="text-4xl md:text-6xl font-bold font-headline mb-4">{slide.title}</h2>
-                    <p className="text-lg md:text-xl max-w-2xl mb-8">{slide.description}</p>
-                    <Button asChild size="lg">
-                      <Link href={slide.buttonLink}>{slide.buttonText}</Link>
-                    </Button>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10" />
-        </Carousel>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">
+             Celebrating 30,000+ Members Strong
+            </h1>
+            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
+              Join a trusted financial partner with over 11 years of experience in empowering our community.
+            </p>
+            <Button size="lg" asChild>
+              <Link href="/join">Become a Member</Link>
+            </Button>
+          </div>
+          <div className="relative h-64 md:h-auto md:aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                data-ai-hint={heroImage.imageHint}
+                fill
+                className="object-cover"
+                priority
+              />
+            )}
+          </div>
+        </div>
       </section>
 
       {/* About Us Section */}
