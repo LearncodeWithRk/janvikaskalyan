@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -24,7 +25,7 @@ export function Header() {
                   </div>
                   <div className="hidden md:flex items-center gap-2">
                       <Mail className="h-4 w-4" />
-                      <span>Janvikaskalyan200@gmail.com</span>
+                      <a href="mailto:Janvikaskalyan200@gmail.com" className="hover:underline">Janvikaskalyan200@gmail.com</a>
                   </div>
               </div>
               <Button variant="ghost" size="sm" asChild className="h-auto p-1 text-xs hover:bg-primary-foreground/20 hover:text-primary-foreground">
