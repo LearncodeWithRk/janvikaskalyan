@@ -15,7 +15,7 @@ import { NavLinks, MobileNavLinks } from "./NavLinks";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-primary shadow-sm">
-      <div className="bg-background/10 text-primary-foreground py-2 text-xs">
+      <div className="bg-primary/80 text-primary-foreground py-2 text-xs">
           <div className="container flex items-center justify-between px-4 md:px-6">
               <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
