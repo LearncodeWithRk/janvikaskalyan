@@ -39,7 +39,6 @@ const navLinks = [
   },
   { href: "/gallery", label: "Gallery" },
   { href: "/join", label: "Membership" },
-  { href: "/forms", label: "Membership Form" },
   { href: "/contact", label: "Contact Us" },
 ];
 
