@@ -15,109 +15,109 @@
     {
       "id": "gallery1",
       "description": "Members participating in a community event.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21tdW5pdHklMjBldmVudHxlbnwwfHx8fDE3NjE0NDU4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img1_zczc4t.jpg",
       "imageHint": "community event"
     },
     {
       "id": "gallery2",
       "description": "A modern and welcoming interior of a society branch.",
-      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjE0MTAzMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img2_f4x7wi.jpg",
       "imageHint": "office interior"
     },
     {
       "id": "gallery3",
       "description": "A happy member receiving financial advice from a staff member.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBhZHZpY2V8ZW58MHx8fHwxNzYxNDEwNzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img3_e6wevq.jpg",
       "imageHint": "financial advice"
     },
     {
       "id": "gallery4",
       "description": "A group of members celebrating a society milestone.",
-      "imageUrl": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsb2FufGVufDB8fHx8MTc2MTU2Mzc3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img4_tzt66e.jpg",
       "imageHint": "group celebration"
     },
     {
       "id": "gallery5",
       "description": "An annual general meeting of the society members.",
-      "imageUrl": "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2FufGVufDB8fHx8MTc2MTU2Mzc3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img5_lqlegj.jpg",
       "imageHint": "business seminar"
     },
     {
       "id": "gallery6",
       "description": "A financial literacy workshop for the members.",
-      "imageUrl": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NjI5MjQyMzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631331/JVK%20IMG/img6_gz0wen.jpg",
       "imageHint": "financial workshop"
     },
     {
       "id": "gallery7",
       "description": "Members having a productive discussion at a table.",
-      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGRpc2N1c3Npb258ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img7_www1pe.jpg",
       "imageHint": "business discussion"
     },
     {
       "id": "gallery8",
       "description": "An educational seminar for the society members.",
-      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlZHVjYXRpb25hbCUyMHNlbWluYXJ8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img8_pwylwn.jpg",
       "imageHint": "educational seminar"
     },
     {
       "id": "gallery9",
       "description": "Team members collaborating on a project.",
-      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img9_dbyd2k.jpg",
       "imageHint": "team collaboration"
     },
     {
       "id": "gallery10",
       "description": "A successful business handshake.",
-      "imageUrl": "https://images.unsplash.com/photo-1622675338228-04d80cb2b1f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img10_iskrwz.jpg",
       "imageHint": "business handshake"
     },
     {
       "id": "gallery11",
       "description": "A person signing a document.",
-      "imageUrl": "https://images.unsplash.com/photo-1563207629-9135315510f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWduaW5nJTIwZG9jdW1lbnR8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img11_iydkld.jpg",
       "imageHint": "signing document"
     },
     {
       "id": "gallery12",
       "description": "A diverse group of people in a meeting.",
-      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaXZlcnNlJTIwZ3JvdXB8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img12_t8tof4.jpg",
       "imageHint": "diverse group"
     },
     {
       "id": "gallery13",
       "description": "A vibrant community gathering.",
-      "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBnYXRoZXJpbmd8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img13_xo5iiv.jpg",
       "imageHint": "community gathering"
     },
     {
       "id": "gallery14",
       "description": "Close-up of a signed contract.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224154-260325c2766d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzaWduZWQlMjBjb250cmFjdHxlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631329/JVK%20IMG/img14_xg8d5v.jpg",
       "imageHint": "signed contract"
     },
     {
       "id": "gallery15",
       "description": "People networking at a corporate event.",
-      "imageUrl": "https://images.unsplash.com/photo-1538688423619-a81d3f23454b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMG5ldHdvcmtpbmd8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631330/JVK%20IMG/img15_bwe1fl.jpg",
       "imageHint": "business networking"
     },
     {
       "id": "gallery16",
       "description": "A presentation at a business conference.",
-      "imageUrl": "https://images.unsplash.com/photo-1582653291997-063997c029d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzYzMDMyNzc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img16_ar4jwu.jpg",
       "imageHint": "business conference"
     },
     {
       "id": "gallery17",
       "description": "A financial advisor explaining charts to a client.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-1696413565d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjMwMzI3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img17_vme357.jpg",
       "imageHint": "financial planning"
     },
     {
       "id": "gallery18",
       "description": "Hands holding a plant growing from coins.",
-      "imageUrl": "https://images.unsplash.com/photo-1423592707957-3b212afa3738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBpbnZlc3RtZW50fGVufDB8fHx8MTc2MzA0MjY1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img18_dzwrim.jpg",
       "imageHint": "investment growth"
     },
     {
