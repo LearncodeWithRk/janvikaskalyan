@@ -9,6 +9,13 @@ import { ArrowRight, Users, PiggyBank, Landmark, UserPlus, ChevronLeft, ChevronR
 import React, { useState, useEffect, useRef } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const heroSlides = [
   {
@@ -17,8 +24,6 @@ const heroSlides = [
     image: getImage('cooperative-meeting'),
     buttonText: "Become a member",
     buttonLink: "/join",
-    bgColor: "#f0f4ff",
-    textColor: "#0d244f",
   },
   {
     title: "Saving Deposit",
@@ -26,8 +31,6 @@ const heroSlides = [
     image: getImage('saving-deposit'),
     buttonText: "सम्पर्क करें",
     buttonLink: "/contact",
-    bgColor: "#e8f5e9",
-    textColor: "#1b5e20",
   },
   {
     title: "Loan",
@@ -35,140 +38,8 @@ const heroSlides = [
     image: getImage('loan-against-deposit'),
     buttonText: "सम्पर्क करें",
     buttonLink: "/contact",
-    bgColor: "#fff8e1",
-    textColor: "#f57f17",
   }
 ];
-
-function HeroSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const stickyPanelRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const scrollableHeight = container.scrollHeight - window.innerHeight;
-      const stepHeight = scrollableHeight / heroSlides.length;
-      const newActiveIndex = Math.min(
-        heroSlides.length - 1,
-        Math.floor(container.scrollTop / stepHeight)
-      );
-      setActiveIndex(newActiveIndex);
-    };
-
-    container.addEventListener('scroll', handleScroll);
-    return () => container.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const dynamicStyles = {
-    backgroundColor: heroSlides[activeIndex].bgColor,
-    color: heroSlides[activeIndex].textColor,
-    transition: 'background-color 0.7s ease, color 0.7s ease',
-  };
-
-  const gridPatternStyle = {
-    '--grid-color': 'rgba(0, 0, 0, 0.05)',
-    backgroundImage: `
-      linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
-    `,
-    backgroundSize: '3.5rem 3.5rem',
-  };
-
-  return (
-    <div
-      ref={scrollContainerRef}
-      className="h-[85vh] w-full overflow-y-auto"
-      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-    >
-      <div style={{ height: `${heroSlides.length * 100}vh` }}>
-        <div ref={stickyPanelRef} className="sticky top-0 h-[85vh] w-full flex flex-col items-center justify-center" style={dynamicStyles}>
-          <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full max-w-7xl mx-auto">
-
-            {/* Left Column: Text Content, Pagination & Button */}
-            <div className="relative flex flex-col justify-center p-8 md:p-16 border-r border-black/10">
-              {/* Pagination Bars */}
-              <div className="absolute top-8 left-8 md:top-16 md:left-16 flex space-x-2">
-                {heroSlides.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => {
-                      const container = scrollContainerRef.current;
-                      if (container) {
-                        const scrollableHeight = container.scrollHeight - window.innerHeight;
-                        const stepHeight = scrollableHeight / heroSlides.length;
-                        container.scrollTo({ top: stepHeight * index, behavior: 'smooth' });
-                      }
-                    }}
-                    className={`h-1 rounded-full transition-all duration-500 ease-in-out ${
-                      index === activeIndex ? 'w-12 bg-black/80' : 'w-6 bg-black/20'
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
-
-              <div className="relative h-64 w-full">
-                {heroSlides.map((slide, index) => (
-                  <div
-                    key={index}
-                    className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                      index === activeIndex
-                        ? 'opacity-100 translate-y-0'
-                        : 'opacity-0 translate-y-10'
-                    }`}
-                  >
-                    <h2 className="text-4xl md:text-5xl font-bold font-headline tracking-tighter">{slide.title}</h2>
-                    <p className="mt-6 text-lg md:text-xl max-w-md">{slide.description}</p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Get Started Button */}
-              <div className="absolute bottom-8 left-8 md:bottom-16 md:left-16">
-                 <Link href={heroSlides[activeIndex].buttonLink}>
-                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                      {heroSlides[activeIndex].buttonText}
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
-                  </Link>
-              </div>
-            </div>
-
-            {/* Right Column: Image Content with Grid Background */}
-            <div className="hidden md:flex items-center justify-center p-8" style={gridPatternStyle}>
-              <div className="relative w-full h-[70vh] rounded-2xl overflow-hidden shadow-2xl border-4 border-black/5">
-                <div
-                  className="absolute top-0 left-0 w-full h-full transition-transform duration-700 ease-in-out"
-                  style={{ transform: `translateY(-${activeIndex * 100}%)` }}
-                >
-                  {heroSlides.map((slide, index) => (
-                    <div key={index} className="w-full h-full">
-                      {slide.image &&
-                        <Image
-                          src={slide.image.imageUrl}
-                          alt={slide.title}
-                          className="h-full w-full object-cover"
-                          width={800}
-                          height={1200}
-                          priority={index === 0}
-                          unoptimized
-                        />
-                      }
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function HomePage() {
   const products = [
@@ -210,8 +81,36 @@ export default function HomePage() {
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="relative w-full h-[85vh] bg-primary/10">
-        <HeroSlider />
+      <section className="relative w-full h-[85vh] bg-primary/10 flex items-center justify-center">
+        <Carousel className="w-full h-full" opts={{ loop: true }}>
+          <CarouselContent className="h-full">
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index} className="h-full p-0">
+                <div className="relative w-full h-full">
+                  {slide.image && (
+                    <Image
+                      src={slide.image.imageUrl}
+                      alt={slide.title}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
+                    <h2 className="text-4xl md:text-6xl font-bold font-headline mb-4">{slide.title}</h2>
+                    <p className="text-lg md:text-xl max-w-2xl mb-8">{slide.description}</p>
+                    <Button asChild size="lg">
+                      <Link href={slide.buttonLink}>{slide.buttonText}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10" />
+        </Carousel>
       </section>
 
       {/* About Us Section */}
