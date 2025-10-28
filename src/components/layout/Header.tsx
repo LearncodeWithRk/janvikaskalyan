@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Menu, Landmark } from "lucide-react";
+import Image from 'next/image';
 
 import { Button } from "@/components/ui/button";
 import {
@@ -17,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-primary shadow-sm">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Landmark className="h-6 w-6 text-primary-foreground" />
+          <Image src="https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png" alt="JVK Logo" width={40} height={40} />
           <span className="font-bold text-lg text-primary-foreground">JVK</span>
         </Link>
 

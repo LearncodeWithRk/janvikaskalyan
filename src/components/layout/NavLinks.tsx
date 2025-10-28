@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Landmark } from "lucide-react";
+import Image from 'next/image';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -104,7 +105,7 @@ export function MobileNavLinks() {
         <div className="flex flex-col h-full">
             <div className="p-6">
                 <Link href="/" className="flex items-center gap-2">
-                    <Landmark className="h-6 w-6 text-primary" />
+                    <Image src="https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png" alt="JVK Logo" width={40} height={40} />
                     <span className="font-bold">JVK</span>
                 </Link>
             </div>
