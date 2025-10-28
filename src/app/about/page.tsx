@@ -14,9 +14,6 @@ export default function AboutPage() {
        <section className="py-20 md:py-32 text-primary-foreground" style={{ backgroundColor: '#132440' }}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About Us</h1>
-            <p className="text-lg text-muted-foreground/80">
-              Your trusted partner in financial growth and community empowerment since 2015.
-            </p>
         </div>
       </section>
       <div className="container mx-auto px-4 py-16 md:py-24">
