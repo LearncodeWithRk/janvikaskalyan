@@ -175,7 +175,7 @@ export default function HomePage() {
     { title: "Recurring Deposit", description: "Recurring Deposit (RD) is a product where members have to deposit the installment every month, to get a cumulative return …", icon: Users, href: "/recurring-deposit" },
     { title: "Fixed Deposit", description: "Give your portfolio stability of returns and safety and liquidity. Invest in FIXED DEPOSIT. We offer attractive returns…", icon: PiggyBank, href: "/fixed-deposit" },
     { title: "Saving Account", description: "It is a kind of Scheme similar to the SAVING ACCOUNTS. Offers Interest rates @6% p.a. Anytime deposit and Anytime Withdrawal…", icon: HandCoins, href: "/saving-deposit" },
-    { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/loans" },
+    { title: "Loan", description: "A trusted and member-centric, one-stop financial services provider, Jan Vikas Kalyan caters to the diverse financial needs of …", icon: Landmark, href: "/emergency-loan" },
   ];
 
   const galleryImages = [
@@ -363,5 +363,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-    
