@@ -20,7 +20,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const heroSlides = [
   {
-    title: "Celebrating To Become More Than 30,000 + Members",
+    title: "30,000+ Members Strong",
     description: "Established more than 11 years",
     image: getImage('cooperative-meeting'),
     buttonText: "Become a member",
@@ -34,9 +34,9 @@ const heroSlides = [
     buttonLink: "/contact",
   },
   {
-    title: "Loan",
+    title: "Easy & Quick Loans",
     description: "आपके विकास के लिए हमेशा तत्पर , सदस्यों के लिए आसानी से लोन की सुविधा",
-    image: getImage('loan-against-deposit'),
+    image: getImage('personal-loan-hero'),
     buttonText: "सम्पर्क करें",
     buttonLink: "/contact",
   }
@@ -78,39 +78,49 @@ export default function HomePage() {
 
   const selectedImage = selectedImageIndex !== null ? galleryImages[selectedImageIndex] : null;
 
-  const heroImage = getImage('cooperative-meeting');
-
-
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">
-             Celebrating 30,000+ Members Strong
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0">
-              Join a trusted financial partner with over 11 years of experience in empowering our community.
-            </p>
-            <Button size="lg" asChild>
-              <Link href="/join">Become a Member</Link>
-            </Button>
-          </div>
-          <div className="relative h-64 md:h-auto md:aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                data-ai-hint={heroImage.imageHint}
-                fill
-                className="object-cover"
-                priority
-              />
-            )}
-          </div>
-        </div>
+      <section className="relative h-[60vh] md:h-[80vh] w-full">
+        <Carousel 
+          className="w-full h-full" 
+          opts={{ loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
+        >
+          <CarouselContent>
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[60vh] md:h-[80vh] w-full">
+                  {slide.image && (
+                    <Image
+                      src={slide.image.imageUrl}
+                      alt={slide.image.description}
+                      data-ai-hint={slide.image.imageHint}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center text-primary-foreground p-4">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 animate-fade-in-down">{slide.title}</h1>
+                    <p className="text-lg md:text-xl mb-8 max-w-2xl animate-fade-in-up">{slide.description}</p>
+                    <Button size="lg" asChild>
+                      <Link href={slide.buttonLink}>{slide.buttonText}</Link>
+                    </Button>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
+        </Carousel>
       </section>
+
 
       {/* About Us Section */}
        <section className="py-16 md:py-24 bg-card">
