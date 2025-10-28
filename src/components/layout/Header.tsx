@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -21,7 +20,7 @@ export function Header() {
               <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
                       <Phone className="h-4 w-4" />
-                      <span>+91 9625380067, +91 9205437299</span>
+                      <a href="tel:+919625380067" className="hover:underline">+91 9625380067</a>, <a href="tel:+919205437299" className="hover:underline">+91 9205437299</a>
                   </div>
                   <div className="hidden md:flex items-center gap-2">
                       <Mail className="h-4 w-4" />
