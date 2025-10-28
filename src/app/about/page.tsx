@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="bg-background">
        <section className="py-20 md:py-32 text-primary-foreground" style={{ backgroundColor: '#132440' }}>
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About Jan Vikas Kalyan Society</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4">About Us</h1>
             <p className="text-lg text-muted-foreground/80">
               Your trusted partner in financial growth and community empowerment since 2015.
             </p>
