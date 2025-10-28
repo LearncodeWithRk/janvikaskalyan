@@ -19,7 +19,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image src="https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png" alt="JVK Logo" width={40} height={40} />
-          <span className="font-bold text-lg text-primary-foreground">JVK</span>
+          
         </Link>
 
         <div className="hidden md:flex items-center gap-4">

@@ -106,7 +106,6 @@ export function MobileNavLinks() {
             <div className="p-6">
                 <Link href="/" className="flex items-center gap-2">
                     <Image src="https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png" alt="JVK Logo" width={40} height={40} />
-                    <span className="font-bold">JVK</span>
                 </Link>
             </div>
             <nav className="flex-grow px-4">
