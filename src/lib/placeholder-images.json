@@ -3,7 +3,7 @@
     {
       "id": "cooperative-meeting",
       "description": "A diverse group of people in a professional meeting, looking at a presentation.",
-      "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtZWV0aW5nfGVufDB8fHx8MTc2MjE4ODcyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/learncodewithrk/image/upload/v1761631328/JVK%20IMG/img5_lqlegj.jpg",
       "imageHint": "cooperative meeting"
     },
     {
@@ -123,7 +123,7 @@
     {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
-      "imageUrl": "https://images.unsplash.com/photo-1621947081720-86970823b77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MjI5Mzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579621970795-87f91d908377?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93aW5nJTIwbW9uZXl8ZW58MHx8fHwxNzYyODg3NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure savings"
     },
     {
@@ -135,31 +135,31 @@
     {
       "id": "saving-deposit",
       "description": "A clear jar half-full of coins with a label that says 'SAVINGS'.",
-      "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYXZpbmdzJTIwamFyfGVufDB8fHx8MTc2MjI5MzgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjI4ODc0NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "savings jar"
     },
     {
       "id": "compulsory-deposit",
       "description": "A formal document with a seal, representing a mandatory and official plan.",
-      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpZXR5JTIwZG9jdW1lbnR8ZW58MHx8fHwxNzYyMjkzMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZWdhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2Mjg4NzUwOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
       "id": "personal-loan-hero",
       "description": "A person reviewing loan documents at a desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04421cd6c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMGxvYW58ZW58MHx8fHwxNzYyMjkzODYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604367233938-2ba8a1132c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBidWRnZXR8ZW58MHx8fHwxNzYyODg3NTQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "personal loan"
     },
     {
       "id": "emergency-loan",
       "description": "An ambulance, symbolizing urgency and immediate help.",
-      "imageUrl": "https://images.unsplash.com/photo-1605289355469-de6a08c02359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbWVyZ2VuY3klMjBsb2FufGVufDB8fHx8MTc2MjI5Mzg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059ee212?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3VzaW5nJTIwbG9hbnxlbnwwfHx8fDE3NjI4ODc1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "emergency help"
     },
     {
       "id": "loan-against-deposit",
       "description": "A vault, symbolizing security and leveraging assets.",
-      "imageUrl": "https://images.unsplash.com/photo-1585649433439-c999d06b6b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5rJTIwdmF1bHR8ZW58MHx8fHwxNzYyMjkzOTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5rJTIwbG9ja2VyfGVufDB8fHx8MTc2Mjg4NzYwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure vault"
     },
     {
