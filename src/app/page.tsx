@@ -16,6 +16,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const heroSlides = [
   {
@@ -82,10 +83,20 @@ export default function HomePage() {
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
       <section className="relative w-full h-[85vh] bg-primary/10 flex items-center justify-center overflow-hidden">
-        <Carousel className="w-full h-full" plugins={[]} opts={{ loop: true }}>
-          <CarouselContent className="h-full -ml-0">
+        <Carousel
+          className="w-full h-full"
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          opts={{
+            loop: true,
+          }}
+        >
+          <CarouselContent className="h-full">
             {heroSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-full p-0 basis-full">
+              <CarouselItem key={index} className="h-full p-0">
                 <div className="relative w-full h-full">
                   {slide.image && (
                     <Image
