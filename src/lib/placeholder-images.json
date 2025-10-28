@@ -123,31 +123,31 @@
     {
       "id": "fixed-deposit",
       "description": "A visual representation of secure savings and growth with gold coins and a piggy bank.",
-      "imageUrl": "https://images.unsplash.com/photo-1639755248628-6e54a8063a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZWN1cmUlMjBzYXZpbmdzfGVufDB8fHx8MTc2MTQ2Nzk0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593672715438-d88a706299a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xkZW4lMjBjb2luc3xlbnwwfHx8fDE3NjIyOTMwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure savings"
     },
     {
       "id": "recurring-deposit",
       "description": "A stack of coins growing, with a plant sprouting from the top, symbolizing steady growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncm93aW5nJTIwY29pbnN8ZW58MHx8fHwxNzYxNDY3OTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbnZlc3RtZW50JTIwZ3Jvd3RofGVufDB8fHx8MTc2MjI5MzA4NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growing coins"
     },
     {
       "id": "saving-deposit",
       "description": "A clear jar half-full of coins with a label that says 'SAVINGS'.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYxNDIyMTUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjIyOTMxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "savings jar"
     },
     {
       "id": "compulsory-deposit",
       "description": "A formal document with a seal, representing a mandatory and official plan.",
-      "imageUrl": "https://images.unsplash.com/photo-1562564055-71e051d33c19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb3JtYWwlMjBkb2N1bWVudHxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589998059171-988d887df646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpZXR5JTIwZG9jdW1lbnR8ZW58MHx8fHwxNzYyMjkzMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
       "id": "personal-loan-hero",
       "description": "A happy couple standing in front of their new home.",
-      "imageUrl": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGNvdXBsZXxlbnwwfHx8fDE3NjE0NDIxOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576941089067-2de3c901e126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXclMjBob21lfGVufDB8fHx8MTc2MjI5MzE5MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "happy couple"
     },
     {
@@ -159,7 +159,7 @@
     {
       "id": "loan-against-deposit",
       "description": "A key on top of a stack of money, symbolizing unlocking value from savings.",
-      "imageUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb25leSUyMGtleXxlbnwwfHx8fDE3NjE5MjM0NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsZXZlcmFnZSUyMHNhdmluZ3N8ZW58MHx8fHwxNzYyMjkzMjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "unlocking value"
     },
     {
