@@ -27,7 +27,7 @@ export default function AboutPage() {
                 data-ai-hint={aboutImage.imageHint}
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg object-cover"
+                className="rounded-lg shadow-lg object-cover w-full"
               />
             )}
           </div>
@@ -44,7 +44,7 @@ export default function AboutPage() {
 
         <div className="my-16 md:my-24 text-center">
             <h2 className="text-3xl font-bold font-headline mb-12">संस्था की उपलब्धि (Our Achievements)</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
                     <CardHeader>
                         <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit mb-4">

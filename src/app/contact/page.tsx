@@ -69,7 +69,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-5 gap-12">
         <div className="md:col-span-3">
           <Card className="shadow-lg">
-            <CardContent className="p-6">
+            <CardContent className="p-6 md:p-8">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <FormField
@@ -143,7 +143,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-muted-foreground">Janvikaskalyan200@gmail.com</p>
+                <p className="text-muted-foreground break-all">Janvikaskalyan200@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

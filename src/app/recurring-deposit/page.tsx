@@ -36,23 +36,23 @@ export default function RecurringDepositPage() {
               <Table className="min-w-full">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="font-semibold whitespace-nowrap">Deposit Per Month</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 1 Year (9% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 2 Years (11% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 3 Years (13% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 4 Years (15% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 5 Years (15% Annual)</TableHead>
+                    <TableHead className="font-semibold whitespace-nowrap px-2 py-3 text-center">Deposit Per Month</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 1 Year (9% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 2 Years (11% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 3 Years (13% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 4 Years (15% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 5 Years (15% Annual)</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {maturityData.map((row) => (
                     <TableRow key={row.deposit}>
-                      <TableCell className="font-medium text-center">{row.deposit.toLocaleString()}</TableCell>
-                      <TableCell className="text-center">{row.year1}</TableCell>
-                      <TableCell className="text-center">{row.year2}</TableCell>
-                      <TableCell className="text-center">{row.year3}</TableCell>
-                      <TableCell className="text-center">{row.year4}</TableCell>
-                      <TableCell className="text-center">{row.year5}</TableCell>
+                      <TableCell className="font-medium text-center px-2 py-4">{row.deposit.toLocaleString()}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year1}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year2}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year3}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year4}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year5}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

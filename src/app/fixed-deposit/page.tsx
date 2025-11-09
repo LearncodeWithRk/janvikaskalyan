@@ -43,23 +43,23 @@ export default function FixedDepositPage() {
               <Table className="min-w-full">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="font-semibold whitespace-nowrap">Deposit Amount</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 90 days</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 1 Year</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 2 Years</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 3 Years</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap">After 6 Years 6 Months</TableHead>
+                    <TableHead className="font-semibold whitespace-nowrap px-2 py-3 text-center">Deposit Amount</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 90 days</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 1 Year</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 2 Years</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 3 Years</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 6 Years 6 Months</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {maturityData.map((row) => (
                     <TableRow key={row.deposit}>
-                      <TableCell className="font-medium">{row.deposit}</TableCell>
-                      <TableCell className="text-center">{row.days90}</TableCell>
-                      <TableCell className="text-center">{row.year1}</TableCell>
-                      <TableCell className="text-center">{row.year2}</TableCell>
-                      <TableCell className="text-center">{row.year3}</TableCell>
-                      <TableCell className="text-center">{row.year6}</TableCell>
+                      <TableCell className="font-medium text-center px-2 py-4">{row.deposit}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.days90}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year1}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year2}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year3}</TableCell>
+                      <TableCell className="text-center px-2 py-4">{row.year6}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
