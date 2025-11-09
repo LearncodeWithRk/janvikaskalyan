@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, FileText, UserCheck, Shield, PiggyBank, BadgePercent, AlertTriangle, User, CircleDollarSign, Percent, XCircle } from "lucide-react";
@@ -37,31 +38,33 @@ export default function FixedDepositPage() {
         </div>
         
         <div className="my-16 md:my-24">
-          <Card className="max-w-6xl mx-auto shadow-lg">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="font-semibold">Deposit Amount</TableHead>
-                  <TableHead className="font-semibold text-center">After 90 days</TableHead>
-                  <TableHead className="font-semibold text-center">After 1 Year</TableHead>
-                  <TableHead className="font-semibold text-center">After 2 Years</TableHead>
-                  <TableHead className="font-semibold text-center">After 3 Years</TableHead>
-                  <TableHead className="font-semibold text-center">After 6 Years 6 Months</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {maturityData.map((row) => (
-                  <TableRow key={row.deposit}>
-                    <TableCell className="font-medium">{row.deposit}</TableCell>
-                    <TableCell className="text-center">{row.days90}</TableCell>
-                    <TableCell className="text-center">{row.year1}</TableCell>
-                    <TableCell className="text-center">{row.year2}</TableCell>
-                    <TableCell className="text-center">{row.year3}</TableCell>
-                    <TableCell className="text-center">{row.year6}</TableCell>
+          <Card className="max-w-6xl mx-auto shadow-lg overflow-hidden">
+            <div className="overflow-x-auto">
+              <Table className="min-w-full">
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="font-semibold whitespace-nowrap">Deposit Amount</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 90 days</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 1 Year</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 2 Years</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 3 Years</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 6 Years 6 Months</TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {maturityData.map((row) => (
+                    <TableRow key={row.deposit}>
+                      <TableCell className="font-medium">{row.deposit}</TableCell>
+                      <TableCell className="text-center">{row.days90}</TableCell>
+                      <TableCell className="text-center">{row.year1}</TableCell>
+                      <TableCell className="text-center">{row.year2}</TableCell>
+                      <TableCell className="text-center">{row.year3}</TableCell>
+                      <TableCell className="text-center">{row.year6}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
           </Card>
         </div>
 

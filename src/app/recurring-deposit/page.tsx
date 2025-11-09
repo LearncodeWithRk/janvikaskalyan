@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -30,31 +31,33 @@ export default function RecurringDepositPage() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         
         <div className="my-12">
-          <Card className="max-w-6xl mx-auto shadow-lg">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="font-semibold">Deposit Per Month</TableHead>
-                  <TableHead className="font-semibold text-center">After 1 Year (9% Annual)</TableHead>
-                  <TableHead className="font-semibold text-center">After 2 Years (11% Annual)</TableHead>
-                  <TableHead className="font-semibold text-center">After 3 Years (13% Annual)</TableHead>
-                  <TableHead className="font-semibold text-center">After 4 Years (15% Annual)</TableHead>
-                  <TableHead className="font-semibold text-center">After 5 Years (15% Annual)</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {maturityData.map((row) => (
-                  <TableRow key={row.deposit}>
-                    <TableCell className="font-medium text-center">{row.deposit.toLocaleString()}</TableCell>
-                    <TableCell className="text-center">{row.year1}</TableCell>
-                    <TableCell className="text-center">{row.year2}</TableCell>
-                    <TableCell className="text-center">{row.year3}</TableCell>
-                    <TableCell className="text-center">{row.year4}</TableCell>
-                    <TableCell className="text-center">{row.year5}</TableCell>
+          <Card className="max-w-6xl mx-auto shadow-lg overflow-hidden">
+            <div className="overflow-x-auto">
+              <Table className="min-w-full">
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="font-semibold whitespace-nowrap">Deposit Per Month</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 1 Year (9% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 2 Years (11% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 3 Years (13% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 4 Years (15% Annual)</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap">After 5 Years (15% Annual)</TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {maturityData.map((row) => (
+                    <TableRow key={row.deposit}>
+                      <TableCell className="font-medium text-center">{row.deposit.toLocaleString()}</TableCell>
+                      <TableCell className="text-center">{row.year1}</TableCell>
+                      <TableCell className="text-center">{row.year2}</TableCell>
+                      <TableCell className="text-center">{row.year3}</TableCell>
+                      <TableCell className="text-center">{row.year4}</TableCell>
+                      <TableCell className="text-center">{row.year5}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
              <CardContent>
             </CardContent>
           </Card>

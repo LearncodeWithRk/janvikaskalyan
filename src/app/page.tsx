@@ -132,8 +132,8 @@ export default function HomePage() {
                     />
                   )}
                   <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center text-primary-foreground p-4">
-                    <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 animate-fade-in-down">{slide.title}</h1>
-                    <p className="text-lg md:text-xl mb-8 max-w-2xl animate-fade-in-up">{slide.description}</p>
+                    <h1 className="text-3xl md:text-6xl font-bold font-headline mb-4 animate-fade-in-down">{slide.title}</h1>
+                    <p className="text-md md:text-xl mb-8 max-w-2xl animate-fade-in-up">{slide.description}</p>
                     <Button size="lg" asChild>
                       <Link href={slide.buttonLink}>{slide.buttonText}</Link>
                     </Button>
