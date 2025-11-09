@@ -106,7 +106,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full">
+      <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
         <Carousel 
           setApi={setCarouselApi}
           className="w-full h-full" 
@@ -142,8 +142,8 @@ export default function HomePage() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
+          <CarouselPrevious className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
+          <CarouselNext className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40" />
            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
             {heroSlides.map((_, index) => (
               <button
