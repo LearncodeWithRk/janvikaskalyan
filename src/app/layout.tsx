@@ -15,7 +15,12 @@ export const metadata: Metadata = {
   title: 'Jan Vikas Kalyan Co-operative Society Ltd.',
   description: 'Jan Vikas Kalyan Co-operative Society Ltd. – a trusted one-stop financial partner in Delhi offering savings, deposits & member-friendly loans to over 30,000 members.',
   icons: {
-    icon: 'https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png',
+    icon: [
+      { url: 'https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png', type: 'image/png' },
+      { url: '/favicon.ico' },
+    ],
+    shortcut: 'https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png',
+    apple: 'https://res.cloudinary.com/learncodewithrk/image/upload/v1761631670/JVK%20IMG/logojvk_flqvna.png',
   },
 };
 

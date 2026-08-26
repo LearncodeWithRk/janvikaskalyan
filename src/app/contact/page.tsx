@@ -63,7 +63,7 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-16 md:py-24">
       <h1 className="text-3xl md:text-4xl font-bold font-headline text-center mb-4">Get In Touch</h1>
       <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-        Have questions about our plans, loans, or membership? We're here to help.
+        Have questions about our plans, loans, or membership? We&apos;re here to help.
       </p>
 
       <div className="grid md:grid-cols-5 gap-12">

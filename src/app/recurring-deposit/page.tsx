@@ -3,16 +3,16 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, TrendingUp, User, CircleDollarSign, PiggyBank, AlertTriangle, Shield, Percent, XCircle } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, TrendingUp, User, IndianRupee, PiggyBank, AlertTriangle, Shield, Percent, XCircle } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const maturityData = [
-    { deposit: 500, year1: "6,300", year2: "13,500", year3: "22,100", year4: "33,000", year5: "45,000" },
-    { deposit: 1000, year1: "12,601", year2: "27,000", year3: "44,200", year4: "66,000", year5: "90,000" },
-    { deposit: 2000, year1: "25,202", year2: "54,000", year3: "88,400", year4: "132,000", year5: "180,000" },
-    { deposit: 5000, year1: "63,005", year2: "135,000", year3: "221,000", year4: "330,000", year5: "450,000" },
+  { deposit: "1,000", year2: "26,667", year3: "42,812", year4: "61,835", year5: "90,000", year10: "2,80,000" },
+  { deposit: "2,000", year2: "53,335", year3: "85,624", year4: "1,23,670", year5: "1,80,000", year10: "5,60,000" },
+  { deposit: "3,000", year2: "80,002", year3: "1,28,436", year4: "1,85,505", year5: "2,70,000", year10: "8,40,000" },
+  { deposit: "5,000", year2: "1,33,337", year3: "2,14,060", year4: "3,09,174", year5: "4,50,000", year10: "14,00,000" },
 ];
 
 
@@ -36,23 +36,33 @@ export default function RecurringDepositPage() {
               <Table className="min-w-full">
                 <TableHeader>
                   <TableRow>
-                    <TableHead className="font-semibold whitespace-nowrap px-2 py-3 text-center">Deposit Per Month</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 1 Year (9% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 2 Years (11% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 3 Years (13% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 4 Years (15% Annual)</TableHead>
-                    <TableHead className="font-semibold text-center whitespace-nowrap px-2 py-3">After 5 Years (15% Annual)</TableHead>
+                    <TableHead className="font-semibold whitespace-nowrap px-4 py-3 text-center">Monthly Deposit</TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-4 py-3">
+                      After 2 years<br /><span className="text-xs font-normal opacity-85">10% Annual</span>
+                    </TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-4 py-3">
+                      After 3 years<br /><span className="text-xs font-normal opacity-85">11% Annual</span>
+                    </TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-4 py-3">
+                      After 4 years<br /><span className="text-xs font-normal opacity-85">12% Annual</span>
+                    </TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-4 py-3">
+                      After 5 years<br /><span className="text-xs font-normal opacity-85">15% Annual</span>
+                    </TableHead>
+                    <TableHead className="font-semibold text-center whitespace-nowrap px-4 py-3">
+                      After 10 years<br /><span className="text-xs font-normal opacity-85">15% Annual</span>
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   {maturityData.map((row) => (
                     <TableRow key={row.deposit}>
-                      <TableCell className="font-medium text-center px-2 py-4">{row.deposit.toLocaleString()}</TableCell>
-                      <TableCell className="text-center px-2 py-4">{row.year1}</TableCell>
-                      <TableCell className="text-center px-2 py-4">{row.year2}</TableCell>
-                      <TableCell className="text-center px-2 py-4">{row.year3}</TableCell>
-                      <TableCell className="text-center px-2 py-4">{row.year4}</TableCell>
-                      <TableCell className="text-center px-2 py-4">{row.year5}</TableCell>
+                      <TableCell className="font-medium text-center px-4 py-4">{row.deposit}</TableCell>
+                      <TableCell className="text-center px-4 py-4">{row.year2}</TableCell>
+                      <TableCell className="text-center px-4 py-4">{row.year3}</TableCell>
+                      <TableCell className="text-center px-4 py-4">{row.year4}</TableCell>
+                      <TableCell className="text-center px-4 py-4">{row.year5}</TableCell>
+                      <TableCell className="text-center px-4 py-4">{row.year10}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -79,7 +89,7 @@ export default function RecurringDepositPage() {
                 </Card>
                  <Card>
                     <CardHeader className="flex flex-row items-center gap-4">
-                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <IndianRupee className="h-8 w-8 text-primary" />
                         <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>

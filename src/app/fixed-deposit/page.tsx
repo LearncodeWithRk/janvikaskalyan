@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, FileText, UserCheck, Shield, PiggyBank, BadgePercent, AlertTriangle, User, CircleDollarSign, Percent, XCircle } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, Shield, PiggyBank, BadgePercent, AlertTriangle, User, IndianRupee, Percent, XCircle } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
@@ -85,7 +85,7 @@ export default function FixedDepositPage() {
                 </Card>
                  <Card>
                     <CardHeader className="flex flex-row items-center gap-4">
-                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <IndianRupee className="h-8 w-8 text-primary" />
                         <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>

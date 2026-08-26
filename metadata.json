@@ -1,0 +1,8 @@
+{
+  "name": "Jan Vikas Kalyan Co-operative Society",
+  "description": "Official web portal for Jan Vikas Kalyan Co-operative Thrift & Credit Society Limited, offering savings plans, fixed deposits, and loans.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

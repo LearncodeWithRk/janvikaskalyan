@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, UserCheck, ArrowRight, Banknote, Shield, BookOpen, Clock, User, CircleDollarSign, PiggyBank } from "lucide-react";
+import { CheckCircle, FileText, UserCheck, ArrowRight, Banknote, Shield, BookOpen, Clock, User, IndianRupee, PiggyBank } from "lucide-react";
 import Link from "next/link";
 import { getImage } from "@/lib/placeholder-images";
 
@@ -50,7 +50,7 @@ export default function SavingDepositPage() {
                 </Card>
                  <Card>
                     <CardHeader className="flex flex-row items-center gap-4">
-                        <CircleDollarSign className="h-8 w-8 text-primary" />
+                        <IndianRupee className="h-8 w-8 text-primary" />
                         <CardTitle className="text-lg">MINIMUM DEPOSIT AMOUNT</CardTitle>
                     </CardHeader>
                     <CardContent>
